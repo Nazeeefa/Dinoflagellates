@@ -1,4 +1,4 @@
-## Table with experimental salinity level for each strain
+## Experimental salinity level for each strain
 
 | Salinity  	|  0 	|   3	|   30	| Done |
 |---	|---	|---	|---	| ---
@@ -10,3 +10,11 @@
 |  SHHI-4 (69)	|   	|  	|   -	| Y
 |  PAER-2 (70) 	|   	|   	|   	|
 |  PAER-2 (71)	|   	|  -	|   	| Y |
+
+## Analyses
+
+- FASTQ files, for both forward and reverse reads, downloaded from ENA's ftp server 
+ - SRR IDs were obtained from NCBI, for example 
+ - corresponds to data here https://www.imicrobe.us/#/investigators/180
+
+- MultiQC was performed for each strain 
