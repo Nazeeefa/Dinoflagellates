@@ -19,9 +19,9 @@ Key:
 ## Analyses
 
 1.SRR (SRA Run Accession)** numbers were obtained from NCBI ([Example](https://www.ncbi.nlm.nih.gov/sra?LinkName=biosample_sra&from_uid=2740276)).
-..* SRR numbers corresponds to IDs listed at [iMicrobe](https://www.imicrobe.us/#/investigators/180).
-..* FASTQ files, for both forward and reverse reads, were downloaded from ENA ([Example](https://www.ebi.ac.uk/ena/data/view/SRR1294400)).
+* SRR numbers corresponds to IDs listed at [iMicrobe](https://www.imicrobe.us/#/investigators/180).
+* FASTQ files, for both forward and reverse reads, were downloaded from ENA ([Example](https://www.ebi.ac.uk/ena/data/view/SRR1294400)).
 
 ** You can read about accession types [here](https://www.ncbi.nlm.nih.gov/books/NBK56913/#search.what_do_the_different_sra_accessi).
 
-- MultiQC
+2. MultiQC
