@@ -10,7 +10,7 @@ find -name '*.fastq.gz' | xargs fastqc -o "dir/path"
 mv -T old/name new/name 
 ```
 
-## Confirming number of reads (example):
+### Confirming number of reads (example):
 
 ```
 cat SRR1296786.fastq | grep "^@SRR" | wc -l
