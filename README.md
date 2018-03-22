@@ -1,7 +1,8 @@
 
-The repository is a part of a project titled "Salinity as a driver of speciation in free-living dinoflagellates".
+The repository is a part of a study that aims to understand the effects of salinity in Dinoflagellates' species at expression level. The project is being carried out at [Rengefors lab](https://rengeforslab.org/).
+
+### Files:
 
 - toolkit.md contains information on analysis tools.
-- data.md has data structure and recent draft notes on analyses.
-- bash.md is for a list of commands (contains basic stuff!)
-
+- data.md has recent draft notes on analyses.
+- bash.md contains a list of commands
