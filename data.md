@@ -25,3 +25,33 @@ Key:
 ** You can read about accession types [here](https://www.ncbi.nlm.nih.gov/books/NBK56913/#search.what_do_the_different_sra_accessi).
 
 2. MultiQC
+
+```
+Analysis folder > multiQC -o multiQC/ .
+```
+
+## File Structure
+
+1. MMETSP03 folder
+
+* Analysis
+
+  * fastq folder
+  
+    * fastq.gz files as symbolic links pointing to /Data/fastq/SRRCode_1(or SRRCode_2).fastq.gz
+  
+  * fastqc folder
+  
+    * fastqc analyses with HTML files and fastqc.zip files
+  
+  * multiQC (folder)
+  
+    * multiqc_report.html
+    
+    * multiQC_data (folder): log/stats files relative to multiQC run
+
+* Data
+
+  * fastqc folder
+  
+    * fastq.gz files - downloaded between 20-21 March
