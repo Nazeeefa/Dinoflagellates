@@ -1,18 +1,19 @@
 ## Experimental salinity level for each strain
 
-| Salinity  	|  0 	|   3	|   30	| Done |
-|---	|---	|---	|---	| ---
-|  SHTV-5 (59) 	|   	|  	|   	|
-|  SHTV-5 (60) 	|   	|  - 	|   	| Y |
-|  SHTV-5 (61)	|   	|   	|  - 	| Y |
-|  SHHI-4 (67)	|   	|  	|   	|
-|   SHHI-4 (68)	|   	|  -	|   	| Y |
-|  SHHI-4 (69)	|   	|  	|   -	| Y
-|  PAER-2 (70) 	|   	|   	|   	|
-|  PAER-2 (71)	|   	|  -	|   	| Y |
+| SRR        | Salinity (Sample #)|  0 PSU | 3 PSU	| 30 PSU	| Done |
+|--------    | -------------------|-----   |---	   |---	    | ---  |
+| SRR1296786 |  SHTV-5 (59) 	     |   	    |  	    |   	    |      |
+| SRR1296972 |  SHTV-5 (60) 	     |   	    |  - 	  |   	    | Y    |
+| SRR1294400 | SHTV-5 (61)	       |   	    |   	  |  - 	 | Y    |
+| SRR1296793 | SHHI-4 (67)	       |   	    |  	   |   	  |      |
+| SRR1296794 | SHHI-4 (68)	       |   	|  -	  |   	  | Y    |
+| SRR1296796 | SHHI-4 (69)	       |   	|  	   |   -	 | Y    |
+| SRR1294439 | PAER-2 (70) 	      |   	|   	  |   	  |      |
+| SRR1294440 | PAER-2 (71)	       |   	|  -	  |   	  | Y    |
 
 Key:
 
++ PSU = Practical Salinity Unit; 1 g salt per 1000 grams of water = 1 PSU [Source](https://podaac.jpl.nasa.gov/SeaSurfaceSalinity)
 + SH = *Scrippsiella Hangoei* (Habitat: Sediment)
 + PA = *Peridinium aciculiferum* (Habitat: Freshwater)
 
