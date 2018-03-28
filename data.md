@@ -5,7 +5,7 @@
 | SRR1296786 |  SHTV-5 (59) 	     |   	    |  	    |   	    |      |
 | SRR1296972 |  SHTV-5 (60) 	     |   	    |  - 	  |   	    | Y    |
 | SRR1294400 | SHTV-5 (61)	       |   	    |   	  |  - 	 | Y    |
-| SRR1296793 | SHHI-4 (67)	       |   	    |  	   |   	  |      |
+| SRR1296793 | SHHI-4 (67)|[Click on 'All runs'](https://www.ncbi.nlm.nih.gov/sra/?term=SRR1294439)|  	   |   	  |      |
 | SRR1296794 | SHHI-4 (68)	       |   	    |  -	  |   	  | Y    |
 | SRR1296796 | SHHI-4 (69)	       |    	   |  	   |   -	 | Y    |
 | SRR1294439 | PAER-2 (70)|[Click on 'All runs'](https://www.ncbi.nlm.nih.gov/sra/?term=SRR1294439)	 |   |   |      |
