@@ -56,3 +56,10 @@ Analysis folder > multiQC -o multiQC/ .
   * fastqc folder
   
     * fastq.gz files - downloaded between 20-21 March
+
+To-do:
+
+ - Symbolic Links with new names (original files in Data fastq) and linked files in Analysis fastq
+ - Run fastqc analyses in Analysis folder ("fastqc")
+ - Run multiQC
+ 
