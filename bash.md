@@ -7,6 +7,21 @@ Example (dir/path): "/home/nazeefa/dinoflagellates/MMETSP03/Analysis/fastqc/fast
 
 ```
 
+## Counting sequnce characters in fastq.gz file
+```
+zcat *.fastq.gz | paste - - - - | cut -f 2 | head -1 | wc -c
+```
+
+## Installing Seqtk
+
+https://github.com/lh3/seqtk
+
+
+## Running Seqtk
+```
+
+```
+
 ### Renaming Directory:
 ```
 mv -T old/name new/name 
