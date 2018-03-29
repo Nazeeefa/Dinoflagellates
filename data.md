@@ -1,21 +1,21 @@
 ## Experimental salinity level for each strain
 
-| SRR        | Salinity (Sample #)|  0 PSU | 3 PSU	| 30 PSU	| Done |
-|--------    | -------------------|-----   |---	   |---	    | ---  |
-| SRR1296786 |  SHTV-5 (59) 	     |   	-    |  	    |   	    |      |
-| SRR1296972 |  SHTV-5 (60) 	     |   	    |  - 	  |   	    | Y    |
-| SRR1294400 | SHTV-5 (61)	       |   	    |   	  |  - 	 | Y    |
-| SRR1296793 | SHHI-4 (67)*         |       |  	   |   	  |      |
-| SRR1296794 | SHHI-4 (68)	       |   	    |  -	  |   	  | Y    |
-| SRR1296796 | SHHI-4 (69)	       |    	   |  	   |   -	 | Y    |
-| SRR1294439 | PAER-2 (70)|[Click on 'All runs'](https://www.ncbi.nlm.nih.gov/sra/?term=SRR1294439)	 |   |   |      |
-| SRR1294440 | PAER-2 (71)	       |   	    |  -	  |   	  | Y    |
+| SRR        | Salinity (Sample #)|  0 PSU | 3 PSU	| 30 PSU	| Done | Read Length (Forward & Reverse)|
+|--------    | -------------------|-----   |---	   |---	    | ---  | -----|
+| SRR1296786 |  SHTV-5 (59) 	     |   	-    |  	    |   	    |     |  101 |
+| SRR1296972 |  SHTV-5 (60) 	     |   	    |  - 	  |   	    | Y    |   51 |
+| SRR1294400 | SHTV-5 (61)	       |   	    |   	  |  - 	 | Y       | 101  |
+| SRR1296793 | SHHI-4 (67)*       |   -    |  	   |   	  |        |  51 |
+| SRR1296794 | SHHI-4 (68)	       |   	    |  -	  |   	  | Y       |  51 |
+| SRR1296796 | SHHI-4 (69)	       |    	   |  	   |   -	 | Y       |  51 |
+| SRR1294439 | PAER-2 (70)|       |        |      |      |         |   51 |
+| SRR1294440 | PAER-2 (71)	       |   	    |  -	  |   	  | Y       |   51 |
 
 | Samples|  0 PSU          |  3 PSU            | 30 PSU |
 |--------| -------         |------             |------	 |
-| SHTV-5 | 59/SRR1296786   | 60/SRR1296972	    |  61/	     | 
-| SHHI-4 |        |        |        |
-| PAER-2 |        |        |        |
+| SHTV-5 | 59/SRR1296786   | 60/SRR1296972	    |  61/	  | 
+| SHHI-4 |  67/            | 68/               |  69/   |
+| PAER-2 |  70/            |  71/              |    X    |
 
 Key:
 
