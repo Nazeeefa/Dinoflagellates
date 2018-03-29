@@ -16,10 +16,16 @@ zcat *.fastq.gz | paste - - - - | cut -f 2 | head -1 | wc -c
 
 https://github.com/lh3/seqtk
 
+## path
+```
+cd bin
+nano .bashrc
+export PATH=$PATH:/home/nazeefa/bin/seqtk/seqtk
+```
 
 ## Running Seqtk
 ```
-
+seqtk trimfq -b 50 -e 0 fastq/SRR1296786_1.fastq.gz > trim_seqtk/786.fastq.gz
 ```
 
 ### Renaming Directory:
