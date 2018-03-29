@@ -3,6 +3,8 @@
 ### Running FastQC:
 ```
 find -name '*.fastq.gz' | xargs fastqc -o "dir/path"
+Example (dir/path): "/home/nazeefa/dinoflagellates/MMETSP03/Analysis/fastqc/fastqc_new_html"
+
 ```
 
 ### Renaming Directory:
