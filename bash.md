@@ -45,18 +45,18 @@ cat SRR1296786.fastq | grep "^@SRR" | wc -l
 cat SRR1296786.fastq | grep "^+SRR" | wc -l
 ```
 
-## Installing Seqtk
+#### Installing Seqtk
 
 https://github.com/lh3/seqtk
 
-## path
+#### path
 ```
 cd bin
 nano .bashrc
 export PATH=$PATH:/home/nazeefa/bin/seqtk/seqtk
 ```
 
-## Running Seqtk
+#### Running Seqtk
 ```
 seqtk trimfq -b 50 -e 0 fastq/SRR1296786_1.fastq.gz > trim_seqtk/786.fastq.gz
 ```
