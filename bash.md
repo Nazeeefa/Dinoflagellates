@@ -28,6 +28,11 @@ TrimmomaticPE: Completed successfully
 
 ```
 
+### Copying Symbolic link (files in a new dir)
+```
+for file in *.fastq.gz; do cp -a /home/nazeefa/dinoflagellates/MMETSP03/Analysis/fastq/$file .; done
+```
+
 ### Renaming Directory:
 ```
 mv -T old/name new/name 
