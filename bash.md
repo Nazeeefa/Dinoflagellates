@@ -12,6 +12,31 @@ Example (dir/path): "/home/nazeefa/dinoflagellates/MMETSP03/Analysis/fastqc/fast
 zcat *.fastq.gz | paste - - - - | cut -f 2 | head -1 | wc -c
 ```
 
+## Running Trimmomatic (for 59 and 60)
+```
+java -jar ~/bin/Trimmomatic-0.36/trimmomatic-0.36.jar PE SHTV-5_30_1.fastq.gz SHTV-5_30_2.fastq.gz SHTV-5_30_1P.fastq.gz SHTV-5_30_1U.fastq.gz SHTV-5_30_2P.fastq.gz SHTV-5_30_2U.fastq.gz HEADCROP:50 CROP:101
+```
+
+## Running Process Output: Trimmomatic
+```
+TrimmomaticPE: Started with arguments:
+SHTV-5_30_1.fastq.gz SHTV-5_30_2.fastq.gz SHTV-5_30_1P.fastq.gz SHTV-5_30_1U.fastq.gz SHTV-5_30_2P.fastq.gz SHTV-5_30_2U.fastq.gz HEADCROP:50 CROP:101
+Multiple cores found: Using 4 threads
+Quality encoding detected as phred33
+```
+
+### Renaming Directory:
+```
+mv -T old/name new/name 
+```
+
+### Confirming number of reads (example):
+
+```
+cat SRR1296786.fastq | grep "^@SRR" | wc -l
+cat SRR1296786.fastq | grep "^+SRR" | wc -l
+```
+
 ## Installing Seqtk
 
 https://github.com/lh3/seqtk
@@ -26,16 +51,4 @@ export PATH=$PATH:/home/nazeefa/bin/seqtk/seqtk
 ## Running Seqtk
 ```
 seqtk trimfq -b 50 -e 0 fastq/SRR1296786_1.fastq.gz > trim_seqtk/786.fastq.gz
-```
-
-### Renaming Directory:
-```
-mv -T old/name new/name 
-```
-
-### Confirming number of reads (example):
-
-```
-cat SRR1296786.fastq | grep "^@SRR" | wc -l
-cat SRR1296786.fastq | grep "^+SRR" | wc -l
 ```
