@@ -7,17 +7,17 @@ Example (dir/path): "/home/nazeefa/dinoflagellates/MMETSP03/Analysis/fastqc/fast
 
 ```
 
-## Counting sequnce characters in fastq.gz file
+### Counting sequnce characters in fastq.gz file
 ```
 zcat *.fastq.gz | paste - - - - | cut -f 2 | head -1 | wc -c
 ```
 
-## Running Trimmomatic (for 59 and 60)
+### Running Trimmomatic (for 59 and 60)
 ```
 java -jar ~/bin/Trimmomatic-0.36/trimmomatic-0.36.jar PE SHTV-5_30_1.fastq.gz SHTV-5_30_2.fastq.gz SHTV-5_30_1P.fastq.gz SHTV-5_30_1U.fastq.gz SHTV-5_30_2P.fastq.gz SHTV-5_30_2U.fastq.gz HEADCROP:50 CROP:101
 ```
 
-## Running Process Output: Trimmomatic
+### Running Process Output: Trimmomatic
 ```
 TrimmomaticPE: Started with arguments:
 SHTV-5_30_1.fastq.gz SHTV-5_30_2.fastq.gz SHTV-5_30_1P.fastq.gz SHTV-5_30_1U.fastq.gz SHTV-5_30_2P.fastq.gz SHTV-5_30_2U.fastq.gz HEADCROP:50 CROP:101
