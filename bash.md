@@ -37,6 +37,11 @@ for file in *.fastq.gz; do cp -a /home/nazeefa/dinoflagellates/MMETSP03/Analysis
 ```
 mv -T old/name new/name 
 ```
+### Displaying list of files in all folders
+```
+find $(/home/nazeefa/dinoflagellates/MMETSP03/Analysis_2 -type f
+```
+
 
 ### Confirming number of reads (example):
 
