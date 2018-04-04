@@ -37,9 +37,20 @@ for file in *.fastq.gz; do cp -a /home/nazeefa/dinoflagellates/MMETSP03/Analysis
 ```
 mv -T old/name new/name 
 ```
+
 ### Displaying list of files in all folders
 ```
 find $(home/nazeefa/dinoflagellates/MMETSP03/Analysis_2) -type f
+```
+
+### Total count of files in folder (excluding symbolic links)
+```
+ls -l | grep -v ^l | wc -l
+```
+
+### Total count of files in folder
+```
+ls -1 | wc -l
 ```
 
 ### Confirming number of reads (example):
@@ -55,9 +66,7 @@ https://github.com/lh3/seqtk
 
 #### path
 ```
-cd bin
-nano .bashrc
-export PATH=$PATH:/home/nazeefa/bin/seqtk/seqtk
+cd bin > nano .bashrc > export PATH=$PATH:/home/nazeefa/bin/seqtk/seqtk
 ```
 
 #### Running Seqtk
