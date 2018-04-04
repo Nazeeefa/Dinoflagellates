@@ -32,7 +32,10 @@ Key:
 * HEADCROP: 50 CROP: 101
 * Rerun with CROP: 50
 ```
-Analysis folder > multiQC -o multiQC/ .
+Analysis folder > multiqc -o multiQC/ .
+```
+```
+multiqc ./ ./multiQC/
 ```
 
 ## File Structure
