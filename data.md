@@ -70,3 +70,17 @@ To-do:
  - Run fastqc analyses in Analysis folder ("fastqc")
  - Run multiQC
  
+ ### Assembly Files
+ 
+ 
+| Sample Number | Sequence Count|
+|--------    | -----------------|
+| 59 |  81854 	 |
+| 60 |  69908 	 |
+| 61 |  83907 	 |
+| 67 |  76640 	 |
+| 68 |  77388 	 |
+| 69 |  80845 	 |
+| 70 |  64738 	 |
+| 71 |  66306 	 |
+ 
