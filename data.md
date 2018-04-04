@@ -8,14 +8,9 @@
 | SRR1296793 | SHHI-4_0 (67)*       |   -    |  	   |   	  |        |  50 |
 | SRR1296794 | SHHI-4_3 (68)	       |   	    |  -	  |   	  | Y       |  50 |
 | SRR1296796 | SHHI-4_30 (69)	       |    	   |  	   |   -	 | Y       |  50 |
-| SRR1294439 | PAER-2_0 (70)       |        |      |      |         | 50 |
+| SRR1294439 | PAER-2_0 (70)       |    -    |   X   |   X   |         | 50 |
 | SRR1294440 | PAER-2_3 (71)	       |   	    |  -	  |   	  | Y       |   50 |
 
-| Samples|  0 PSU          |  3 PSU            | 30 PSU |
-|--------| -------         |------             |------	 |
-| SHTV-5 | 59/SRR1296786   | 60/SRR1296972	    |  61/	  | 
-| SHHI-4 |  67/            | 68/               |  69/   |
-| PAER-2 |  70/            |  71/              |    X    |
 
 Key:
 
@@ -34,6 +29,8 @@ Key:
 
 2. MultiQC
 
+* HEADCROP: 50 CROP: 101
+* Rerun with CROP: 50
 ```
 Analysis folder > multiQC -o multiQC/ .
 ```
