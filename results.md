@@ -15,6 +15,7 @@
 #### SRR1296786  SHTV-5_0 (59)
 
 | Forward Reads	  |   	   |  | | | |
+|--------    | -------------------|-----   |---	   |---	    | 
 | Reverse Reads	  |   	   |  | | | |
 
 #### MultiQC Results
