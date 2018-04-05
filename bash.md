@@ -17,7 +17,7 @@ zcat *.fastq.gz | paste - - - - | cut -f 2 | head -1 | wc -c
 java -jar ~/bin/Trimmomatic-0.36/trimmomatic-0.36.jar PE SHTV-5_30_1.fastq.gz SHTV-5_30_2.fastq.gz SHTV-5_30_1P.fastq.gz SHTV-5_30_1U.fastq.gz SHTV-5_30_2P.fastq.gz SHTV-5_30_2U.fastq.gz HEADCROP:50 CROP:101
 ```
 
-### Running Process Output: Trimmomatic
+### Run-Process Output: Trimmomatic
 ```
 TrimmomaticPE: Started with arguments:
 SHTV-5_30_1.fastq.gz SHTV-5_30_2.fastq.gz SHTV-5_30_1P.fastq.gz SHTV-5_30_1U.fastq.gz SHTV-5_30_2P.fastq.gz SHTV-5_30_2U.fastq.gz HEADCROP:50 CROP:101
@@ -27,7 +27,22 @@ Input Read Pairs: 20841201 Both Surviving: 20841201 (100.00%) Forward Only Survi
 TrimmomaticPE: Completed successfully
 
 ```
+### Running MultiQC
+```
+multiqc ./ ./multiQC/
+```
+```
+Running data in:
+/home/nazeefa/dinoflagellates/MMETSP03/Analysis
 
+Output goes to: /home/nazeefa/dinoflagellates/MMETSP03/Analysis/multiQC
+
+#### Open multiQC report:
+
+```
+firefox multiqc_report.html
+```
+```
 ### Copying Symbolic link (files in a new dir)
 ```
 for file in *.fastq.gz; do cp -a /home/nazeefa/dinoflagellates/MMETSP03/Analysis/fastq/$file .; done
