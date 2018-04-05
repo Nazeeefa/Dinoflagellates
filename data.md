@@ -1,7 +1,12 @@
 ## Information
 
-The data contains  paired-end FASTQ formatted Illlumina read files for each of the two conditions
+The data contains paired-end FASTQ formatted Illlumina read files for each of the three strains (SHTV, SHHI, and PAER). All RNA-Seq data can be found at [iMicrobe](https://www.imicrobe.us/#/investigators/180). 
 
+Each biological replicate (eg. SRR129...) contains a pair of fastq files (eg. SRR129.._1.fastq.gz for the 'left/forward' and SRR129..._2.fastq.gz for the 'right'/reverse read of the paired end sequences).
+
+The quality of data is evaluated using FASTQC. MultiQC analyses were performed to
+Trinit is utilised to understand 
+ 
 ### Experimental salinity level for each strain
 
 | SRR        | Salinity (Sample #)|  0 PSU | 3 PSU	| 30 PSU	| Done | Read Length (Forward & Reverse)|
