@@ -36,11 +36,8 @@ Running data in:
 /home/nazeefa/dinoflagellates/MMETSP03/Analysis
 
 Output goes to: /home/nazeefa/dinoflagellates/MMETSP03/Analysis/multiQC
-
-#### Open multiQC report:
-
 ```
-firefox multiqc_report.html
+Open multiQC report: firefox multiqc_report.html
 ```
 ```
 ### Copying Symbolic link (files in a new dir)
