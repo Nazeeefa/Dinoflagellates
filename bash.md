@@ -50,6 +50,11 @@ for file in *.fastq.gz; do cp -a /home/nazeefa/dinoflagellates/MMETSP03/Analysis
 mv -T old/name new/name 
 ```
 
+### Finding a folder
+```
+ls -l Data | grep <folder keyword/letter>
+
+```
 ### Displaying list of files in all folders
 ```
 find $(home/nazeefa/dinoflagellates/MMETSP03/Analysis_2) -type f
