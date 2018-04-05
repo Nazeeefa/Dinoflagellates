@@ -1,4 +1,7 @@
-## Experimental salinity level for each strain
+## Information
+
+
+### Experimental salinity level for each strain
 
 | SRR        | Salinity (Sample #)|  0 PSU | 3 PSU	| 30 PSU	| Done | Read Length (Forward & Reverse)|
 |--------    | -------------------|-----   |---	   |---	    | ---  | -----|
