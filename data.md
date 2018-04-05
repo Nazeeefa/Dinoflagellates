@@ -1,5 +1,6 @@
 ## Information
 
+The data contains  paired-end FASTQ formatted Illlumina read files for each of the two conditions
 
 ### Experimental salinity level for each strain
 
@@ -34,12 +35,6 @@ Key:
 
 * HEADCROP: 50 CROP: 101
 * Rerun with CROP: 50
-```
-Analysis folder > multiqc -o multiQC/ .
-```
-```
-multiqc ./ ./multiQC/
-```
 
 ## File Structure
 
