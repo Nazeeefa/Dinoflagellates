@@ -28,7 +28,7 @@ Key:
 + SH = *Scrippsiella Hangoei* (Habitat: Sediment)
 + PA = *Peridinium aciculiferum* (Habitat: Freshwater)
 
-## Data for Analyses
+### Data for Analyses
 
 1.SRR (SRA Run Accession)** numbers were obtained from NCBI ([Example](https://www.ncbi.nlm.nih.gov/sra?LinkName=biosample_sra&from_uid=2740276)).
 * SRR numbers corresponds to IDs listed at [iMicrobe](https://www.imicrobe.us/#/investigators/180).
@@ -38,7 +38,7 @@ Key:
 
 <<< Please see analyses.md for information on programs and running processes >>>
 
-## File Structure
+### File Structure
 
 1. MMETSP03 folder
 
