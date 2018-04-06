@@ -21,3 +21,6 @@
 #### MultiQC Results
 
 #### Trinity: RNA-Seq De novo Assembly Using Trinity
+
+1. de novo transcript assembly (set of data, forward and reverse reads) --> assembled transcript fasta file
+2. 
