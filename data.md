@@ -28,7 +28,7 @@ Key:
 + SH = *Scrippsiella Hangoei* (Habitat: Sediment)
 + PA = *Peridinium aciculiferum* (Habitat: Freshwater)
 
-## Analyses
+## Data for Analyses
 
 1.SRR (SRA Run Accession)** numbers were obtained from NCBI ([Example](https://www.ncbi.nlm.nih.gov/sra?LinkName=biosample_sra&from_uid=2740276)).
 * SRR numbers corresponds to IDs listed at [iMicrobe](https://www.imicrobe.us/#/investigators/180).
@@ -36,10 +36,7 @@ Key:
 
 ** You can read about accession types [here](https://www.ncbi.nlm.nih.gov/books/NBK56913/#search.what_do_the_different_sra_accessi).
 
-2. MultiQC
-
-* HEADCROP: 50 CROP: 101
-* Rerun with CROP: 50
+<<< Please see analyses.md for information on programs and running processes >>>
 
 ## File Structure
 
