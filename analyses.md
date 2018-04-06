@@ -14,13 +14,31 @@
 
 #### SRR1296786  SHTV-5_0 (59)
 
-| Forward Reads	  | 
-|--------    |
-| Reverse Reads	  |
+| Reads	  | 
+|-------- |
+| Forwards |
+| Reverse	  |
 
 #### MultiQC Results
 
+* HEADCROP: 50 CROP: 101
+* Reran with CROP: 50
+
 #### Trinity: RNA-Seq De novo Assembly Using Trinity
 
-1. de novo transcript assembly (set of data, forward and reverse reads) --> assembled transcript fasta file
-2. 
+```
+sudo perl /home/nazeefa/bin/trinityrnaseq-Trinity-v2.6.6/util/TrinityStats.pl MMETSP0360.nt.fa > trinity_60.fa
+```
+
+##### Assembly Files
+ 
+| Sample Number | Sequence Count| Trinity | 
+|--------    | -----------------|
+| 59 |  81854 	 | Y |
+| 60 |  69908 	 | Y |
+| 61 |  83907 	 |
+| 67 |  76640 	 |
+| 68 |  77388 	 |
+| 69 |  80845 	 |
+| 70 |  64738 	 |
+| 71 |  66306 	 |
