@@ -33,7 +33,7 @@ sudo perl /home/nazeefa/bin/trinityrnaseq-Trinity-v2.6.6/util/TrinityStats.pl MM
 ##### Assembly Files
  
 | Sample Number | Sequence Count| Trinity | 
-|--------    | -----------------|
+|--------    | -----------------| -----------|
 | 59 |  81854 	 | Y |
 | 60 |  69908 	 | Y |
 | 61 |  83907 	 |
