@@ -39,24 +39,24 @@ echo ${samples} | tr " " "\n" | while read sample; do cat ${sample}.nt.fa | sudo
 ##### Assembly Stats
  
 | Sample Number | Trinity | N50 Values | Contig Length | 
-|--------    | ----------| -----------|
-| 59 |  81854 	 | Y |
-| 60 |  69908 	 | Y |
-| 61 |  83907 	 |
-| 67 |  76640 	 |
-| 68 |  77388 	 |
-| 69 |  80845 	 |
-| 70 |  64738 	 |
-| 71 |  66306 	 |
+|--------    | ----------| -----------| -----------|
+| 59 |  81854 	 | Y |  |
+| 60 |  69908 	 | Y |  |
+| 61 |  83907 	 ||  |
+| 67 |  76640 	 ||  |
+| 68 |  77388 	 ||  |
+| 69 |  80845 	 ||  |
+| 70 |  64738 	 ||  |
+| 71 |  66306 	 ||  |
 
-The total number of reconstructed transcripts match up identically to count that was calculated earlier. The total number of 'genes' reported is the number of unique transcript identifier prefixes (without the isoform numbers). In this case, given that it's original assembly and transcripts are not reported as alternative isoforms for the same gene, same amount for 'gene' and 'transcript' identifiers would be expected.
+Total number of reconstructed transcripts match up identically to total sequence count. The total number of 'genes' reported is same as total number of transcripts. In this case, given that it's original assembly and transcripts are not reported as alternative isoforms for the same gene, same amount for 'gene' and 'transcript' identifiers would be expected.
 
-'Contig N50' values indicate that at least half of the assembled bases are in contigs of at least that contig length. N40 and N30 statistics represent similar meaning - as the corresponding length increases, the N-value decreases.
+'Contig N50' values indicate that at least half of the assembled bases are in contigs of at least that contig length. N40 and N30 statistics indicate similar results in a context that as the corresponding length increases, the N-value decreases.
 
-" Isoforms with long sequence lengths =  N50 value will be skewed towards a higher value
-If an assembler is able to reconstruct transcript contigs for those transcirpts that are very lowly expressed, these contigs will tend to be short and numerous, biasing the N50 value towards lower values (decrease).
+"N50 value is likely to be skewed towards a higher value if isoforms have long sequence lengths.
+If an assembler reconstructs transcript contigs for those transcirpts that are very lowly expressed, these contigs will tend to high in amount and short in length, biasing the N50 value towards lower values (decrease).
 
-High sequencing depth > more evidence (reads) available to enable reconstruction of these short lowly expressed transcripts > downward skew of the N50 value."
+High sequencing depth = more evidence (reads) available to enable reconstruction of short poorly expressed transcripts > therefore, downward skew of the N50 value."
 
 ###### Assembly Stats: MMETSP0359.nt.fa
 
