@@ -3,9 +3,6 @@
 The data contains paired-end FASTQ formatted Illlumina read files for each of the three strains (SHTV, SHHI, and PAER). All RNA-Seq data can be found at [iMicrobe](https://www.imicrobe.us/#/investigators/180). 
 
 Each biological replicate (eg. SRR129...) contains a pair of fastq files (eg. SRR129.._1.fastq.gz for the 'left/forward' and SRR129..._2.fastq.gz for the 'right'/reverse read of the paired end sequences).
-
-The quality of data is evaluated using FASTQC. MultiQC analyses were performed to
-Trinit is utilised to understand 
  
 ### Experimental salinity level for each strain
 
@@ -19,7 +16,6 @@ Trinit is utilised to understand
 | SRR1296796 | SHHI-4_30 (69)	       |    	   |  	   |   -	 | Y       |  50 |
 | SRR1294439 | PAER-2_0 (70)       |    -    |   X   |   X   |         | 50 |
 | SRR1294440 | PAER-2_3 (71)	       |   	    |  -	  |   	  | Y       |   50 |
-
 
 Key:
 
@@ -64,9 +60,5 @@ Key:
   
     * fastq.gz files - downloaded between 20-21 March
 
-To-do:
-
- - Symbolic Links with new names (original files in Data fastq) and linked files in Analysis fastq
- - Run fastqc analyses in Analysis folder ("fastqc")
- - Run multiQC
+Note: Symbolic Links with new names (original files in Data fastq) and linked files in Analysis fastq
  
