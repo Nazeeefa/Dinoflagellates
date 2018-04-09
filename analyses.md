@@ -30,7 +30,7 @@
 sudo perl /home/nazeefa/bin/trinityrnaseq-Trinity-v2.6.6/util/TrinityStats.pl MMETSP0360.nt.fa > trinity_60.fa
 ```
 
-##### Assembly Files
+##### Assembly Stats
  
 | Sample Number | Sequence Count| Trinity | 
 |--------    | -----------------| -----------|
@@ -42,3 +42,7 @@ sudo perl /home/nazeefa/bin/trinityrnaseq-Trinity-v2.6.6/util/TrinityStats.pl MM
 | 69 |  80845 	 |
 | 70 |  64738 	 |
 | 71 |  66306 	 |
+
+###### Assembly Stats: MMETSP0359.nt.fa
+
+
