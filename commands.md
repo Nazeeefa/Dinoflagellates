@@ -91,7 +91,7 @@ cd bin > nano .bashrc > export PATH=$PATH:/home/nazeefa/bin/seqtk/seqtk
 seqtk trimfq -b 50 -e 0 fastq/SRR1296786_1.fastq.gz > trim_seqtk/786.fastq.gz
 ```
 
-#### Saving running output (terminal) of bowtie2
+### Saving running output (terminal) of bowtie2
 ```
 bowtie2-build MMETSP0359.nt.fa MMETSP0359.nt.fa >> bowtie_data/bowtie_num_run.txt
 ```
