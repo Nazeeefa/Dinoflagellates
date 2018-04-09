@@ -1,4 +1,4 @@
-#### FASTQC Results
+### FASTQC Results
 
 
 | SRR        | Salinity (Sample #)|  0 PSU | 3 PSU	| 30 PSU	| 
@@ -12,19 +12,19 @@
 | SRR1294439 | PAER-2_0 (70)       |  /  |   X  |   X   |
 | SRR1294440 | PAER-2_3 (71)	       |   X	    |  / |   X	  |
 
-#### SRR1296786  SHTV-5_0 (59)
+### SRR1296786  SHTV-5_0 (59)
 
 | Reads	  | 
 |-------- |
 | Forwards |
 | Reverse	  |
 
-#### MultiQC Results
+### MultiQC Results
 
 * HEADCROP: 50 CROP: 101
 * Reran with CROP: 50
 
-#### Trinity: RNA-Seq De novo Assembly Using Trinity
+### Trinity: RNA-Seq De novo Assembly Using Trinity
 
 ```
 sudo perl /home/nazeefa/bin/trinityrnaseq-Trinity-v2.6.6/util/TrinityStats.pl MMETSP0360.nt.fa > trinity_60.fa
@@ -58,6 +58,8 @@ If an assembler reconstructs transcript contigs for those transcirpts that are v
 
 High sequencing depth = more evidence (reads) available to enable reconstruction of short poorly expressed transcripts > therefore, downward skew of the N50 value."
 
-###### Assembly Stats: MMETSP0359.nt.fa
+### Bowtie2 (via Anaconda)
 
-
+```
+bowtie2-build MMETSP0359.nt.fa MMETSP0359.nt.fa >> bowtie_data/*.bt2
+```
