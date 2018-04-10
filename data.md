@@ -54,11 +54,14 @@ Key:
     
     * multiQC_data (folder): log/stats files relative to multiQC run
 
+* Analysis_2
+
+  * fastq files for all samples with strain names i.e. SHTV, SHHI, etc
+
 * Data
 
   * fastqc folder
   
     * fastq.gz files - downloaded between 20-21 March
-
-Note: Symbolic Links with new names (original files in Data fastq) and linked files in Analysis fastq
  
+ * assembly
