@@ -71,7 +71,7 @@ Building an index library for RNA-seq data using bowtie2 to each fasta file. Six
 bowtie2-build MMETSP0359.nt.fa bowtie_MMETSP0359.nt.fa
 ```
 ```
-bowtie2 --local --no-unal -x MMETSP0359.nt.fa \ -q -1 /home/nazeefa/dinoflagellates/MMETSP03/Analysis_2/fastq_samples/SHTV-5_0_1P.fastq.gz -2 /home/nazeefa/dinoflagellates/MMETSP03/Analysis_2/fastq_samples/SHTV-5_0_2P.fastq.gz \ | samtools view -Sb - | samtools sort -o - - > bowtie2.bam
+bowtie2 --local --no-unal -x MMETSP0359.nt.fa -q -1 /home/nazeefa/dinoflagellates/MMETSP03/Analysis_2/fastq_samples/SHTV-5_0_1P.fastq.gz -2 /home/nazeefa/dinoflagellates/MMETSP03/Analysis_2/fastq_samples/SHTV-5_0_2P.fastq.gz | samtools view -Sb - | samtools sort -o - - > bowtie2.bam
 ```
 In the above command:
 * --local = local alignment; ends might be soft clipped (off)
