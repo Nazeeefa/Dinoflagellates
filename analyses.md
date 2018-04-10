@@ -66,7 +66,13 @@ If an assembler reconstructs transcript contigs for those transcirpts that are v
 High sequencing depth = more evidence (reads) available to enable reconstruction of short poorly expressed transcripts > therefore, downward skew of the N50 value."
 
 ### Bowtie2 (via Anaconda)
+Building an index library for RNA-seq data using bowtie2 to each fasta file.
+Output files: 6 files + which file **
 
 ```
-bowtie2-build MMETSP0359.nt.fa MMETSP0359.nt.fa
+bowtie2-build MMETSP0359.nt.fa bowtie_MMETSP0359.nt.fa
+```
+
+```
+bowtie2 --local --no-unal -x MMETSP0359.nt.fa \ -q -1 /home/nazeefa/dinoflagellates/MMETSP03/Analysis_2/fastq_samples/SHTV-5_0_1P.fastq.gz -2 /home/nazeefa/dinoflagellates/MMETSP03/Analysis_2/fastq_samples/SHTV-5_0_2P.fastq.gz \ | samtools view -Sb - | samtools sort -o - - > bowtie2.bam
 ```
