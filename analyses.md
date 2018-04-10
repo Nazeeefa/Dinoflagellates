@@ -60,8 +60,7 @@ Total number of reconstructed transcripts match up identically to total sequence
 
 'Contig N50' values indicate that at least half of the assembled bases are in contigs of at least that contig length. N40 and N30 statistics indicate similar results in a context that as the corresponding length increases, the N-value decreases.
 
-"N50 value is likely to be skewed towards a higher value if isoforms have long sequence lengths.
-If an assembler reconstructs transcript contigs for those transcirpts that are very lowly expressed, these contigs will tend to high in amount and short in length, biasing the N50 value towards lower values (decrease).
+If an assembler 'reconstructs' transcript contigs for transcirpts that are very poorly expressed, these contigs will tend to high in amount and short in length, biasing the N50 value towards lower values (decrease).
 
 High sequencing depth = more evidence (reads) available to enable reconstruction of short poorly expressed transcripts > therefore, downward skew of the N50 value."
 
