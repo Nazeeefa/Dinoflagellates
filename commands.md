@@ -70,6 +70,11 @@ ls -l | grep -v ^l | wc -l
 ls -1 | wc -l
 ```
 
+### Reading binary file e.g. bowtie files
+```
+Example: sudo xxd MMETSP0359.nt.fa.1.bt2 | less OR xxd -b filename
+```
+
 ### Confirming number of reads (example):
 
 ```
@@ -77,11 +82,7 @@ cat SRR1296786.fastq | grep "^@SRR" | wc -l
 cat SRR1296786.fastq | grep "^+SRR" | wc -l
 ```
 
-#### Installing Seqtk
-
-https://github.com/lh3/seqtk
-
-#### path
+#### adding path to bashrc
 ```
 cd bin > nano .bashrc > export PATH=$PATH:/home/nazeefa/bin/seqtk/seqtk
 ```
@@ -93,5 +94,5 @@ seqtk trimfq -b 50 -e 0 fastq/SRR1296786_1.fastq.gz > trim_seqtk/786.fastq.gz
 
 ### Saving running output (terminal) of bowtie2
 ```
-bowtie2-build MMETSP0359.nt.fa MMETSP0359.nt.fa >> bowtie_data/bowtie_num_run.txt
+bowtie2-build MMETSP0359.nt.fa MMETSP0359.nt.fa >> bowtie_data/bowtie_sample-number_run.txt
 ```
