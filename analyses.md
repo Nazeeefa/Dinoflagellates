@@ -77,5 +77,10 @@ In the above command:
 * --local = local alignment; ends might be soft clipped (off)
 * --no-unal = suppress SAM records for unaligned reads
 * -q = query input files are FASTQ .fq/.fastq (default)
+* -x = index file(s) with .bt2 extensions
 
-* 
+###### To-do list:
+
+- run the above command for all samples
+- Follow the steps https://github.com/trinityrnaseq/KrumlovTrinityWorkshopJan2018/wiki/Home/82146dabdd7a26912f144da7e7757d56421f699d
+- 
