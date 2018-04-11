@@ -38,6 +38,11 @@ java -jar ~/bin/Trimmomatic-0.36/trimmomatic-0.36.jar PE SHTV-5_0_1.fastq.gz SHT
 ```
 java -jar ~/bin/Trimmomatic-0.36/trimmomatic-0.36.jar PE SHTV-5_30_1.fastq.gz SHTV-5_30_2.fastq.gz SHTV-5_30_1P.fastq.gz SHTV-5_30_1U.fastq.gz SHTV-5_30_2P.fastq.gz SHTV-5_30_2U.fastq.gz CROP:50
 ```
+* 4 Output files:
+  * paired forward (1P)
+  * unpaired forward (1U)
+  * paired reverse (2P)
+  * unpaired reverse (2U)
 
 ### Run-Process Output: Trimmomatic
 ```
