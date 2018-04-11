@@ -126,12 +126,18 @@ In the above command:
 
 The results indicate high quality assembly i.e. more than ~70% of the aligned reads are mapped as proper pairs. In case of low quality, deeper sequencing and assembly of more reads would be expected to make major improvements here.
 
-#### Indexing bam file using samtools
+#### 4.3 Indexing bam file using samtools
 
 Using version: 1.3.1 (using htslib 1.3.1)
 
+
+```
+sudo zypper install gnu_parallel
+```
 ```
 samtools index bowtie2.bam
 ```
-
+```
+ls *.bam | parallel samtools index '{}'
+```
 
