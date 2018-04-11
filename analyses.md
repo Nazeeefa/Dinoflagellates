@@ -44,7 +44,13 @@ samples="MMETSP0367 MMETSP0368  MMETSP0369  MMETSP0370  MMETSP0371"
 echo ${samples} | tr " " "\n" | while read sample; do cat ${sample}.nt.fa | sudo perl /home/nazeefa/bin/trinityrnaseq-Trinity-v2.6.6/util/TrinityStats.pl ${sample}.nt.fa >> assembly_stats/trinity_${sample}.fa; done
 ```
 ##### Assembly Stats
- 
+
+Go to assembly_stats folder and check ("read") all files, with same extension (.txt) all at once:
+
+```
+cat ./*
+```
+
 | Sample Number | Trinity | N50 Values | Contig Length | 
 |--------    | ----------| -----------| -----------|
 | 59 |  81854 	 | Y |  |
