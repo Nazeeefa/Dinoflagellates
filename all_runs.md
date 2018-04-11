@@ -34,3 +34,4 @@ ln -s /home/nazeefa/dinoflagellates/MMETSP03/Data/fastq/SRR1294439_2.fastq.gz PA
 #### 71 (3 PSU) ----
 ln -s /home/nazeefa/dinoflagellates/MMETSP03/Data/fastq/SRR1294440_1.fastq.gz PAER-2_3_1.fastq.gz
 ln -s /home/nazeefa/dinoflagellates/MMETSP03/Data/fastq/SRR1294440_2.fastq.gz PAER-2_3_2.fastq.gz
+
