@@ -50,6 +50,13 @@ for file in *.fastq.gz; do cp -a /home/nazeefa/dinoflagellates/MMETSP03/Analysis
 mv -T old/name new/name 
 ```
 
+### Renaming files (in batch) with same extension:
+```
+for file in *.fa 
+do mv "$file" "${file%.fa}.txt"
+done
+```
+
 ### Finding a folder
 ```
 ls -l Data | grep <folder keyword/letter>
