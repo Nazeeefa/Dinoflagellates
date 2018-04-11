@@ -67,7 +67,7 @@ samples="MMETSP0367 MMETSP0368  MMETSP0369  MMETSP0370  MMETSP0371"
 ```
 echo ${samples} | tr " " "\n" | while read sample; do cat ${sample}.nt.fa | sudo perl /home/nazeefa/bin/trinityrnaseq-Trinity-v2.6.6/util/TrinityStats.pl ${sample}.nt.fa >> assembly_stats/trinity_${sample}.fa; done
 ```
-##### 4.1. Assembly Stats
+#### 4.1. Assembly Stats
 
 Go to assembly_stats folder and check ("read") all files, with same extension (.txt) all at once:
 
@@ -94,7 +94,7 @@ If an assembler 'reconstructs' transcript contigs for transcirpts that are very 
 
 High sequencing depth = more evidence (reads) available to enable reconstruction of short poorly expressed transcripts > therefore, downward skew of the N50 value."
 
-### 4.2 Bowtie2 (via Anaconda)
+#### 4.2 Bowtie2 (via Anaconda)
 
 ##### Linking fasta file to bowtie folders:
 
