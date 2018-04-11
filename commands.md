@@ -11,22 +11,6 @@ Example (dir/path): "/home/nazeefa/dinoflagellates/MMETSP03/Analysis/fastqc/fast
 ```
 zcat *.fastq.gz | paste - - - - | cut -f 2 | head -1 | wc -c
 ```
-
-### Running Trimmomatic (for 59 and 60)
-```
-java -jar ~/bin/Trimmomatic-0.36/trimmomatic-0.36.jar PE SHTV-5_30_1.fastq.gz SHTV-5_30_2.fastq.gz SHTV-5_30_1P.fastq.gz SHTV-5_30_1U.fastq.gz SHTV-5_30_2P.fastq.gz SHTV-5_30_2U.fastq.gz HEADCROP:50 CROP:101
-```
-
-### Run-Process Output: Trimmomatic
-```
-TrimmomaticPE: Started with arguments:
-SHTV-5_30_1.fastq.gz SHTV-5_30_2.fastq.gz SHTV-5_30_1P.fastq.gz SHTV-5_30_1U.fastq.gz SHTV-5_30_2P.fastq.gz SHTV-5_30_2U.fastq.gz HEADCROP:50 CROP:101
-Multiple cores found: Using 4 threads
-Quality encoding detected as phred33
-Input Read Pairs: 20841201 Both Surviving: 20841201 (100.00%) Forward Only Surviving: 0 (0.00%) Reverse Only Surviving: 0 (0.00%) Dropped: 0 (0.00%)
-TrimmomaticPE: Completed successfully
-
-```
 ### Running MultiQC
 ```
 multiqc ./ ./multiQC/
