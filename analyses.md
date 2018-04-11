@@ -1,4 +1,4 @@
-### FASTQC Results
+### 1. FASTQC Results
 
 The quality of data is evaluated using FASTQC.
 
@@ -23,7 +23,7 @@ The quality of data is evaluated using FASTQC.
 | Reverse	  |
 
 
-### Running Trimmomatic (for 59 and 60)
+### 2. Running Trimmomatic (for 59 and 60)
 
 The following was not required:
 
@@ -49,11 +49,11 @@ Input Read Pairs: 20841201 Both Surviving: 20841201 (100.00%) Forward Only Survi
 TrimmomaticPE: Completed successfully
 ```
 
-### MultiQC Results
+### 3. MultiQC Results
 
 MultiQC analyses were performed to...
 
-### Trinity: RNA-Seq De novo Assembly Using Trinity
+### 4. Trinity: RNA-Seq De novo Assembly Using Trinity
 
 Trinity is utilised to understand 
 
@@ -67,7 +67,7 @@ samples="MMETSP0367 MMETSP0368  MMETSP0369  MMETSP0370  MMETSP0371"
 ```
 echo ${samples} | tr " " "\n" | while read sample; do cat ${sample}.nt.fa | sudo perl /home/nazeefa/bin/trinityrnaseq-Trinity-v2.6.6/util/TrinityStats.pl ${sample}.nt.fa >> assembly_stats/trinity_${sample}.fa; done
 ```
-##### Assembly Stats
+##### 4.1. Assembly Stats
 
 Go to assembly_stats folder and check ("read") all files, with same extension (.txt) all at once:
 
@@ -94,14 +94,15 @@ If an assembler 'reconstructs' transcript contigs for transcirpts that are very 
 
 High sequencing depth = more evidence (reads) available to enable reconstruction of short poorly expressed transcripts > therefore, downward skew of the N50 value."
 
-### Linking fasta file to bowtie folders:
+### 4.2 Bowtie2 (via Anaconda)
+
+##### Linking fasta file to bowtie folders:
 
 Link each fasta (.fa) file in *assembly folder* to corresponding bowtie folder (e.g. bowtie_60)
 ```
 ln -s ../MMETSP0360.nt.fa
 ```
 
-### Bowtie2 (via Anaconda)
 Building an index library for RNA-seq data using bowtie2 to each fasta file. Six index files have been produced by the extension .bt2 which could be interpreted as bowtie2.
 
 ```
@@ -116,8 +117,5 @@ In the above command:
 * -q = query input files are FASTQ .fq/.fastq (default)
 * -x = index file(s) with .bt2 extensions
 
-###### To-do list:
-
-- run the above command for all samples
-- Follow the steps https://github.com/trinityrnaseq/KrumlovTrinityWorkshopJan2018/wiki/Home/82146dabdd7a26912f144da7e7757d56421f699d
+####
 - 
