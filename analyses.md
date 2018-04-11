@@ -64,6 +64,13 @@ If an assembler 'reconstructs' transcript contigs for transcirpts that are very 
 
 High sequencing depth = more evidence (reads) available to enable reconstruction of short poorly expressed transcripts > therefore, downward skew of the N50 value."
 
+### Linking fasta file to bowtie folders:
+
+Link each fasta (.fa) file in *assembly folder* to corresponding bowtie folder (e.g. bowtie_60)
+```
+ln -s ../MMETSP0360.nt.fa
+```
+
 ### Bowtie2 (via Anaconda)
 Building an index library for RNA-seq data using bowtie2 to each fasta file. Six index files have been produced by the extension .bt2 which could be interpreted as bowtie2.
 
