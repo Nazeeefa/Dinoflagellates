@@ -75,7 +75,7 @@ ln -s ../MMETSP0360.nt.fa
 Building an index library for RNA-seq data using bowtie2 to each fasta file. Six index files have been produced by the extension .bt2 which could be interpreted as bowtie2.
 
 ```
-bowtie2-build MMETSP0360.nt.fa bowtie_MMETSP0360
+bowtie2-build MMETSP0360.nt.fa MMETSP0360
 ```
 ```
 bowtie2 --local --no-unal -x MMETSP0359.nt.fa -q -1 /home/nazeefa/dinoflagellates/MMETSP03/Analysis_2/fastq_samples/SHTV-5_0_1P.fastq.gz -2 /home/nazeefa/dinoflagellates/MMETSP03/Analysis_2/fastq_samples/SHTV-5_0_2P.fastq.gz | samtools view -Sb - | samtools sort -o - - > bowtie2.bam
