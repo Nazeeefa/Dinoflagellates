@@ -107,8 +107,9 @@ Link each fasta (.fa) file in *assembly folder* to corresponding bowtie folder (
 ```
 ln -s ../MMETSP0360.nt.fa
 ```
+A high quality transcriptome assembly is expected to have strong representation of the reads (input to the assembler). Read representation can be quantified by aligning the RNA-Seq reads back to the transcriptome assembly. Bowtie2 aligner allows to align the reads to the Trinity assembly, and in doing so, take notice of the read representation statistics reported by the bowtie2 aligner.
 
-Building an index library for RNA-seq data using bowtie2 to each fasta file. Six index files have been produced by the extension .bt2 which could be interpreted as bowtie2.
+Prior to running the alignment, index library for the Trinity assembly (RNA-seq data) is built using bowtie2 to each fasta file. 4-6 index files have been produced by the extension .bt2 which could be interpreted as bowtie2.
 
 ```
 bowtie2-build MMETSP0360.nt.fa MMETSP0360
