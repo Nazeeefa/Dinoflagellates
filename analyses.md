@@ -130,12 +130,13 @@ The results indicate high quality assembly i.e. more than ~70% of the aligned re
 
 Using version: 1.3.1 (using htslib 1.3.1)
 
+```
+samtools index bowtie2_sampleNumber.bam
+```
 
+Another option:
 ```
 sudo zypper install gnu_parallel
-```
-```
-samtools index bowtie2.bam
 ```
 ```
 ls *.bam | parallel samtools index '{}'
