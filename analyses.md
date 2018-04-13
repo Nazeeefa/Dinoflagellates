@@ -193,3 +193,5 @@ To-do list:
         879340 (20.20%) aligned exactly 1 time
         487366 (11.20%) aligned >1 times
 94.54% overall alignment rate
+
+[bam_sort_core] merging from 22 files...
