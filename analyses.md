@@ -151,3 +151,18 @@ To-do list:
 - There are more chances for better representations
 - length of sequences vary from end-to-end depending on fragments selected e.g. if target to fragmentise sequence is 100bp then in a lnegth of 1000bp rest of the reads are discarded.
 - 
+
+  27365859 (100.00%) were paired; of these:
+    2609569 (9.54%) aligned concordantly 0 times
+    19247360 (70.33%) aligned concordantly exactly 1 time
+    5508930 (20.13%) aligned concordantly >1 times
+    ----
+    2609569 pairs aligned concordantly 0 times; of these:
+      433405 (16.61%) aligned discordantly 1 time
+    ----
+    2176164 pairs aligned 0 times concordantly or discordantly; of these:
+      4352328 mates make up the pairs; of these:
+        2985622 (68.60%) aligned 0 times
+        879340 (20.20%) aligned exactly 1 time
+        487366 (11.20%) aligned >1 times
+94.54% overall alignment rate
