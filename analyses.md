@@ -124,7 +124,7 @@ In the above command:
 * -q = query input files are FASTQ .fq/.fastq (default)
 * -x = index file(s) with .bt2 extensions
 
-The results indicate high quality assembly i.e. more than ~70% of the aligned reads are mapped as proper pairs. In case of low quality, deeper sequencing and assembly of more reads would be expected to make major improvements here.
+The results indicate high quality assembly i.e. more than ~70% of the aligned reads are mapped as proper pairs. In case of low quality, deeper sequencing and assembly of more reads would be expected for improvements.
 
 #### 4.3 Indexing bam file using samtools
 
