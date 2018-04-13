@@ -126,6 +126,33 @@ In the above command:
 
 The results indicate high quality assembly i.e. more than ~70% of the aligned reads are mapped as proper pairs. In case of low quality, deeper sequencing and assembly of more reads would be expected for improvements.
 
+Here, the reads are aligend to themselves. The subsequent analyses will involve using SHTV-5 samples (0, 30, 30) as references and running against all including each other (but not sample against itself as it has already been done).
+
+###### Data for following done:
+
+####### SHTV-5 against all for comparisons:
+
+* SHTV-5_0 (59):
+ * Running against all seven samples (shown below)
+ * We expect two bam files for each i.e. one from aligning the reads to the assembly (*.bam) + one from indexing via samtools (*.bai)
+
+* SHTV-5_3 (60):
+ * Running against all seven samples (shown below)
+
+* SHTV-5_30 (61):
+ * Running against all seven samples (shown below)
+
+| SRR        | Salinity (Sample #)|  0 PSU | 3 PSU	| 30 PSU	| 
+|--------    | -------------------|-----   |---	   |---	    | 
+| SRR1296786 |  SHTV-5_0 (59) 	     |   /	    |  	X    |   X   | 
+| SRR1296972 |  SHTV-5_3 (60) 	     |   	X |   /  |   X   | 
+| SRR1294400 | SHTV-5_30 (61)	       |  X   |   X  |  / |
+| SRR1296793 | SHHI-4_0 (67)       | /   |  	X  |   X  |
+| SRR1296794 | SHHI-4_3 (68)	       |   	X | /  |   X |
+| SRR1296796 | SHHI-4_30 (69)	       |  X  |  X | /	 | 
+| SRR1294439 | PAER-2_0 (70)       |  /  |   X  |   X   |
+| SRR1294440 | PAER-2_3 (71)	       |   X	    |  / |   X	  |
+
 #### 4.3 Indexing bam file using samtools
 
 Using version: 1.3.1 (using htslib 1.3.1)
