@@ -141,4 +141,13 @@ sudo zypper install gnu_parallel
 ```
 ls *.bam | parallel samtools index '{}'
 ```
+To-do list:
 
+- ABySS to see how fasta files were generated
+- CD-HIT-EST not required as this has already been done by MMETSP project.
+- short transcriptome assembly, more likely for duplicates to be placed as there will be less spaces "opportunities" to occupy so it is likely for multiple sequences to align at one place.
+- in terms of genomes e.g. human genome assembly, large assemblies means there are less likely to be duplicates
+- duplicates could be due to PCR hence start and end of sequences appear different than middle.
+- There are more chances for better representations
+- length of sequences vary from end-to-end depending on fragments selected e.g. if target to fragmentise sequence is 100bp then in a lnegth of 1000bp rest of the reads are discarded.
+- 
