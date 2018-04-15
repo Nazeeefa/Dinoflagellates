@@ -133,13 +133,21 @@ Here, the reads are aligend to themselves. The subsequent analyses will involve 
 ###### SHTV-5 against all for comparisons:
 
 * SHTV-5_0 (59):
- * Running against all seven samples (shown below)
+
+ * Running .fa file against all fastq files of seven samples (shown below)
+ 
  * We expect two bam files for each i.e. one from aligning the reads to the assembly (*.bam) + one from indexing via samtools (*.bai)
+ 
+ * Output file naming:
+ 
+  * **SHTV_59_0_bowtie2_SHTV_3**
 
 * SHTV-5_3 (60):
+
  * Running against all seven samples (shown below)
 
 * SHTV-5_30 (61):
+
  * Running against all seven samples (shown below)
 
 | SRR + Sample Name          | SHTV-5_0 (59)      |  SHTV-5_3 (60) | SHTV-5_30 (61)	| 
@@ -158,7 +166,7 @@ Here, the reads are aligend to themselves. The subsequent analyses will involve 
 Using version: 1.3.1 (using htslib 1.3.1)
 
 ```
-samtools index bowtie2_sampleNumber.bam
+samtools index bowtie2_sampleNumber.bam >> files with .bai extension
 ```
 
 Another option:
@@ -177,21 +185,3 @@ To-do list:
 - duplicates could be due to PCR hence start and end of sequences appear different than middle.
 - There are more chances for better representations
 - length of sequences vary from end-to-end depending on fragments selected e.g. if target to fragmentise sequence is 100bp then in a lnegth of 1000bp rest of the reads are discarded.
-- 
-
-  27365859 (100.00%) were paired; of these:
-    2609569 (9.54%) aligned concordantly 0 times
-    19247360 (70.33%) aligned concordantly exactly 1 time
-    5508930 (20.13%) aligned concordantly >1 times
-    ----
-    2609569 pairs aligned concordantly 0 times; of these:
-      433405 (16.61%) aligned discordantly 1 time
-    ----
-    2176164 pairs aligned 0 times concordantly or discordantly; of these:
-      4352328 mates make up the pairs; of these:
-        2985622 (68.60%) aligned 0 times
-        879340 (20.20%) aligned exactly 1 time
-        487366 (11.20%) aligned >1 times
-94.54% overall alignment rate
-
-[bam_sort_core] merging from 22 files...
