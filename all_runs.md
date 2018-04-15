@@ -84,3 +84,7 @@ bowtie2 --local --no-unal -x MMETSP0370.nt.fa -q -1 /home/nazeefa/dinoflagellate
 bowtie2-build MMETSP0371.nt.fa MMETSP0371.nt.fa
 
 bowtie2 --local --no-unal -x MMETSP0371.nt.fa -q -1 /home/nazeefa/dinoflagellates/MMETSP03/Analysis_2/fastq_samples/PAER-2_3_1.fastq.gz -2 /home/nazeefa/dinoflagellates/MMETSP03/Analysis_2/fastq_samples/PAER-2_3_2.fastq.gz | samtools view -Sb - | samtools sort -o - - > bowtie2_71.bam
+
+## Batch Run (Bowtie2) - aligning reads for each sample to the assembly of each sample:
+
+
