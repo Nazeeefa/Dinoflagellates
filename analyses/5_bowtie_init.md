@@ -1,6 +1,6 @@
 ### Bowtie2 (via Anaconda)
 
-##### Linking fasta file to bowtie folders:
+#### Linking fasta file to bowtie folders:
 
 Link each fasta (.fa) file in *assembly folder* to corresponding bowtie folder (e.g. bowtie_60)
 ```
@@ -8,12 +8,14 @@ ln -s ../MMETSP0360.nt.fa
 ```
 A high quality transcriptome assembly is expected to have strong representation of the reads (input to the assembler). Read representation can be quantified by aligning the RNA-Seq reads back to the transcriptome assembly. Bowtie2 aligner allows to align the reads to the Trinity assembly, and in doing so, take notice of the read representation statistics reported by the bowtie2 aligner.
 
+#### Building a bowtie2 index for the Trinity assembly
+
 Prior to **running the alignment**, library index for the Trinity assembly (RNA-seq data) is built using bowtie2 to each fasta file. 4-6 index files have been produced by the extension .bt2 (interpreted as bowtie2).
 
 ```
 bowtie2-build MMETSP0360.nt.fa MMETSP0360
 ```
-##### Aligning the reads to the assembly
+#### Aligning the reads to the assembly
 
 Alignment (for paired-end reads) is then performed to capture the read alignment statistics.
 
