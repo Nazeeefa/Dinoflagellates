@@ -1,4 +1,4 @@
-#### Aligning reads (for each sample) to the assembly (*.nt.fa) for each file:
+## Aligning reads (for each sample) to the assembly (*.nt.fa) for each file:
 
 ###### SHTV-5 against all for comparisons:
 
