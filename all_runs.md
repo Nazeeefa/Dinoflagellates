@@ -87,4 +87,6 @@ bowtie2 --local --no-unal -x MMETSP0371.nt.fa -q -1 /home/nazeefa/dinoflagellate
 
 ## Batch Run (Bowtie2) - aligning reads for each sample to the assembly of each sample:
 
+### 59 (0 PSU) vs 60 (3 PSU)
 
+bowtie2 --local --no-unal -x MMETSP0359.nt.fa -q -1 /home/nazeefa/dinoflagellates/MMETSP03/Analysis_2/fastq_samples/SHTV-5_3_1P.fastq.gz -2 /home/nazeefa/dinoflagellates/MMETSP03/Analysis_2/fastq_samples/SHTV-5_3_2P.fastq.gz | samtools view -Sb - | samtools sort -o - - > 59_bowtie2_60.bam
