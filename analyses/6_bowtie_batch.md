@@ -1,4 +1,4 @@
-#### Data for following done:
+#### Aligning reads (for each sample) to the assembly (*.nt.fa) for each file:
 
 ###### SHTV-5 against all for comparisons:
 
@@ -46,37 +46,3 @@ To-do list:
 #### 59 (0 PSU) vs 60 (3 PSU)
 
 bowtie2 --local --no-unal -x MMETSP0359.nt.fa -q -1 /home/nazeefa/dinoflagellates/MMETSP03/Analysis_2/fastq_samples/SHTV-5_3_1P.fastq.gz -2 /home/nazeefa/dinoflagellates/MMETSP03/Analysis_2/fastq_samples/SHTV-5_3_2P.fastq.gz | samtools view -Sb - | samtools sort -o - - > 59_bowtie2_60.bam
-
-#### Snakemake:
-
-import config
-import glob
-import os
-import gzip
-
-def get_read_len(wildcards):
-     f=gzip.open((wildcards + "_1.nt.fa"),'rb**')
-     seq=f.readline()
-     seq=f.readline()
-     f.close()
-     return(str(len(seq)-1))
-
-def getpath(wildcards):
-     mysplit=wildcards.split('/')
-     return(mysplit[0]+"/"+mysplit[1])
-
-# Input samples:
-SAMPLES = [fname.split('.')[0] for fname in glob.glob('***')]
-print(SAMPLES)
-
-rule all:
-     params: batch='-l nodes=1:***'
-     input: expand('{sample}.counts', sample=SAMPLES)
-     
-rule runbowtie:
-    """Run fastq-dump to convert sra format to fastq files, creating .fq"""
-    input: "{sample}.***"
-    output: "{sample}_1.bam"
-    params: batch = "-l nodes=1:g8", mydir = lambda wildcards: getpath(wildcards.sample)
-    threads: 1
-    shell: """module load sratoolkit; fastq-dump -split-files --gzip {input} -O {params.mydir} """
