@@ -40,3 +40,7 @@ To-do list:
 - duplicates could be due to PCR hence start and end of sequences appear different than middle.
 - There are more chances for better representations
 - length of sequences vary from end-to-end depending on fragments selected e.g. if target to fragmentise sequence is 100bp then in a lnegth of 1000bp rest of the reads are discarded.
+
+#### Snakemake:
+
+
