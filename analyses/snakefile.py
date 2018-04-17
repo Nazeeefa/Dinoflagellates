@@ -1,4 +1,4 @@
-#### Snakemake:
+# Snakemake version 4.8.0 (-py36_0)
 
 import config
 import glob
