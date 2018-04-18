@@ -7,6 +7,7 @@ echo ${samples} | tr " " "\n" | while read sample; do bowtie2 --local --no-unal 
 ## Reults from batch run of bowtie; aligning reads back to assembly
 
 ### SHTV-5_3 
+(File in editing mode displays following as it appeare on terminal)
 
 16785889 (100.00%) were paired; of these:
     1438278 (8.57%) aligned concordantly 0 times
