@@ -47,6 +47,24 @@ echo ${samples} | tr " " "\n" | while read sample; do bowtie2 --local --no-unal 
 
 ### SHHI-4_0 
 
+23109623 reads; of these:
+  23109623 (100.00%) were paired; of these:
+    3998543 (17.30%) aligned concordantly 0 times
+    15150537 (65.56%) aligned concordantly exactly 1 time
+    3960543 (17.14%) aligned concordantly >1 times
+    ----
+    3998543 pairs aligned concordantly 0 times; of these:
+      222985 (5.58%) aligned discordantly 1 time
+    ----
+    3775558 pairs aligned 0 times concordantly or discordantly; of these:
+      7551116 mates make up the pairs; of these:
+        6281880 (83.19%) aligned 0 times
+        932421 (12.35%) aligned exactly 1 time
+        336815 (4.46%) aligned >1 times
+86.41% overall alignment rate
+[bam_sort_core] merging from 17 files...
+
+
 ### SHHI-4_3 
 
 ### SHHI-4_30 
