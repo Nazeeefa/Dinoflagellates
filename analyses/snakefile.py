@@ -23,7 +23,8 @@ print(SAMPLES)
 rule all:
      params: batch='-l nodes=1:***'
      input: expand('{sample}.counts', sample=SAMPLES)
-     
+
+# For each sample, reads are aligned back to each of the SHTV-5 'fa' file i.e. being used as reference assembly (rule assembly).
 rule runbowtie:
     """Run fastq-dump to convert sra format to fastq files, creating .fq"""
     input: "{sample}.***"
