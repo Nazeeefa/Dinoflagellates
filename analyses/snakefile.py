@@ -1,5 +1,14 @@
 # Snakemake version 4.8.0 (-py36_0)
 
+"""
+Author: Nazeefa Fatima
+Affiliation: LU
+Aim: A simple Snakemake workflow to process paired-end RNA-Seq.
+Run: snakemake   -s Snakefile   
+Latest modification: 
+  - todo
+"""
+
 import config
 import glob
 import os
