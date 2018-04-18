@@ -6,6 +6,9 @@ echo ${samples} | tr " " "\n" | while read sample; do bowtie2 --local --no-unal 
 ```
 ## Reults from batch run of bowtie; aligning reads back to assembly
 
+```
+running in dir: bowtie_59_0 and then move to 59_bowtie_samples 
+```
 ### SHTV-5_3 
 (File in editing mode displays following as it appeare on terminal)
 
@@ -84,6 +87,40 @@ echo ${samples} | tr " " "\n" | while read sample; do bowtie2 --local --no-unal 
 
 ### SHHI-4_30 
 
+24488163 reads; of these:
+  24488163 (100.00%) were paired; of these:
+    5031629 (20.55%) aligned concordantly 0 times
+    15255274 (62.30%) aligned concordantly exactly 1 time
+    4201260 (17.16%) aligned concordantly >1 times
+    ----
+    5031629 pairs aligned concordantly 0 times; of these:
+      220113 (4.37%) aligned discordantly 1 time
+    ----
+    4811516 pairs aligned 0 times concordantly or discordantly; of these:
+      9623032 mates make up the pairs; of these:
+        8152321 (84.72%) aligned 0 times
+        1080391 (11.23%) aligned exactly 1 time
+        390320 (4.06%) aligned >1 times
+83.35% overall alignment rate
+
 ### PAER-2_0 
 
+20622130 reads; of these:
+  20622130 (100.00%) were paired; of these:
+    5911763 (28.67%) aligned concordantly 0 times
+    11529808 (55.91%) aligned concordantly exactly 1 time
+    3180559 (15.42%) aligned concordantly >1 times
+    ----
+    5911763 pairs aligned concordantly 0 times; of these:
+      136719 (2.31%) aligned discordantly 1 time
+    ----
+    5775044 pairs aligned 0 times concordantly or discordantly; of these:
+      11550088 mates make up the pairs; of these:
+        10182616 (88.16%) aligned 0 times
+        1003087 (8.68%) aligned exactly 1 time
+        364385 (3.15%) aligned >1 times
+75.31% overall alignment rate
+
 ### PAER-2_3
+
+
