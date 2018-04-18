@@ -9,6 +9,7 @@ echo ${samples} | tr " " "\n" | while read sample; do bowtie2 --local --no-unal 
 ### SHTV-5_3 
 (File in editing mode displays following as it appeare on terminal)
 
+16785889 reads; of these:
 16785889 (100.00%) were paired; of these:
     1438278 (8.57%) aligned concordantly 0 times
     11956063 (71.23%) aligned concordantly exactly 1 time
