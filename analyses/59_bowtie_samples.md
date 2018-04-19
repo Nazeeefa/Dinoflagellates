@@ -143,3 +143,11 @@ echo ${samples} | tr " " "\n" | while read sample; do bowtie2 --local --no-unal 
         1044328 (8.46%) aligned exactly 1 time
         382977 (3.10%) aligned >1 times
 74.35% overall alignment rate
+
+---------------------------------------------
+
+## Indexing bam file using samtools
+
+```
+ls *.bam | parallel samtools index '{}'
+```
