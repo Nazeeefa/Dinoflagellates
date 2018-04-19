@@ -1,4 +1,4 @@
-# Reults from batch run of bowtie; aligning reads back to assembly
+# Outputs from batch run of bowtie; aligning reads back to assembly
 
 running in dir: bowtie_59_0 and then move to 59_bowtie_samples:
 
