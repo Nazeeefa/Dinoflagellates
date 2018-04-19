@@ -1,5 +1,7 @@
 # Snakemake version 4.8.0 (-py36_0)
 
+# http://pedagogix-tagc.univ-mrs.fr/courses/ABD/practical/snakemake/snake_intro.html
+
 """
 Author: Nazeefa Fatima
 Affiliation: LU
