@@ -6,7 +6,11 @@ echo ${samples} | tr " " "\n" | while read sample; do bowtie2 --local --no-unal 
 ```
 # Reults from batch run of bowtie; aligning reads back to assembly
 
-running in dir: bowtie_59_0 and then move to 59_bowtie_samples 
+running in dir: bowtie_59_0 and then move to 59_bowtie_samples:
+
+```
+file names beginning with certain words: mv 59_bowtie2_* 59_bowtie_samples (dir name)
+```
 
 ## FOR MMETSP0359 (SHTV-5, 0 PSU) against all:
 Order: samples="SHTV-5_3 SHTV-5_30 SHHI-4_0 SHHI-4_3 SHHI-4_30 PAER-2_0 PAER-2_3"
