@@ -21,3 +21,12 @@ echo ${samples} | tr " " "\n" | while read sample; do bowtie2 --local --no-unal 
 ### PAER-2_0 
 
 ### PAER-2_3
+
+
+---------------------------------------------
+
+## Indexing bam file using samtools
+
+```
+ls *.bam | parallel samtools index '{}'
+```
