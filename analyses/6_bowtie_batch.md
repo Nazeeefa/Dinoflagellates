@@ -34,15 +34,12 @@
 To-do list:
 
 - ABySS to see how fasta files were generated
+
+Information:
+
 - CD-HIT-EST not required as this has already been done by MMETSP project.
 - short transcriptome assembly, more likely for duplicates to be placed as there will be less spaces "opportunities" to occupy so it is likely for multiple sequences to align at one place.
 - in terms of genomes e.g. human genome assembly, large assemblies means there are less likely to be duplicates
 - duplicates could be due to PCR hence start and end of sequences appear different than middle.
 - There are more chances for better representations
 - length of sequences vary from end-to-end depending on fragments selected e.g. if target to fragmentise sequence is 100bp then in a lnegth of 1000bp rest of the reads are discarded.
-
-### Commands:
-
-#### 59 (0 PSU) vs 60 (3 PSU)
-
-bowtie2 --local --no-unal -x MMETSP0359.nt.fa -q -1 /home/nazeefa/dinoflagellates/MMETSP03/Analysis_2/fastq_samples/SHTV-5_3_1P.fastq.gz -2 /home/nazeefa/dinoflagellates/MMETSP03/Analysis_2/fastq_samples/SHTV-5_3_2P.fastq.gz | samtools view -Sb - | samtools sort -o - - > 59_bowtie2_60.bam
