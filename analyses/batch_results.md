@@ -142,6 +142,8 @@ Order: samples="SHTV-5_3 SHTV-5_30 SHHI-4_0 SHHI-4_3 SHHI-4_30 PAER-2_0 PAER-2_3
 74.35% overall alignment rate
 
 -----------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------
 
 ## FOR MMETSP0360 (SHTV-5, 3 PSU) against all:
 Order: samples="SHTV-5_0 SHTV-5_30 SHHI-4_0 SHHI-4_3 SHHI-4_30 PAER-2_0 PAER-2_3"
@@ -255,3 +257,20 @@ Order: samples="SHTV-5_0 SHTV-5_30 SHHI-4_0 SHHI-4_3 SHHI-4_30 PAER-2_0 PAER-2_3
 61.33% overall alignment rate
 
 ## PAER-2_3
+
+21274591 reads; of these:
+  21274591 (100.00%) were paired; of these:
+    10123305 (47.58%) aligned concordantly 0 times
+    9597689 (45.11%) aligned concordantly exactly 1 time
+    1553597 (7.30%) aligned concordantly >1 times
+    ----
+    10123305 pairs aligned concordantly 0 times; of these:
+      288627 (2.85%) aligned discordantly 1 time
+    ----
+    9834678 pairs aligned 0 times concordantly or discordantly; of these:
+      19669356 mates make up the pairs; of these:
+        16961349 (86.23%) aligned 0 times
+        1876802 (9.54%) aligned exactly 1 time
+        831205 (4.23%) aligned >1 times
+60.14% overall alignment rate
+
