@@ -36,8 +36,6 @@ For alignments of (forward and reverse) reads back to assembly of sample itself,
 | SRR1294439 + PAER-2_0 (70)                     |   75.31%           |   61.33%       |  	74.91%       |        
 | SRR1294440 + PAER-2_3 (71)                     |    74.35%          |   60.14%       |  	74.06%       | 	    
 
-To-do list:
-
 - ABySS to see how fasta files were generated
 
 Information:
