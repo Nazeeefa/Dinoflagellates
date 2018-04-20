@@ -3,6 +3,7 @@ The repository is a part of a study that aims to understand the effects of salin
 
 ### Files:
 
-- toolkit.md contains information on analysis tools.
-- data.md has draft notes on data and analyses.
-- bash.md contains a list of commands
+- commands.md; list of bash commands
+- data.md;  notes on data and file structure.
+- readings.md; list of relevant publications
+- toolkit.md; information on analysis tools.
