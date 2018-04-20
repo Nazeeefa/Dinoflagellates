@@ -11,19 +11,7 @@ Example (dir/path): "/home/nazeefa/dinoflagellates/MMETSP03/Analysis/fastqc/fast
 ```
 zcat *.fastq.gz | paste - - - - | cut -f 2 | head -1 | wc -c
 ```
-### Running MultiQC
-```
-multiqc ./ ./multiQC/
-```
-```
-Running data in:
-/home/nazeefa/dinoflagellates/MMETSP03/Analysis
 
-Output goes to: /home/nazeefa/dinoflagellates/MMETSP03/Analysis/multiQC
-```
-```
-Open multiQC report: firefox multiqc_report.html
-```
 ### Copying Symbolic link (files in a new dir)
 ```
 for file in *.fastq.gz; do cp -a /home/nazeefa/dinoflagellates/MMETSP03/Analysis/fastq/$file .; done
