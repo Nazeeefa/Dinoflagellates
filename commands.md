@@ -1,4 +1,4 @@
-## List of useful + some very-easy-to-remember commands.
+## Collection of easy-to-remember commands (because lists are handy!)
 
 ### Running FastQC:
 ```
