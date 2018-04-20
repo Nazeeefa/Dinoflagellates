@@ -20,3 +20,5 @@ Open multiQC report: firefox multiqc_report.html
 ```
 multiqc /home/nazeefa/dinoflagellates/MMETSP03 /home/nazeefa/dinoflagellates/MMETSP03/Data/assembly/multiqc_2
 ```
+
+doesn't take into account analyses mentioned in "6_bowtie_batch.md"
