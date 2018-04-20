@@ -2,9 +2,13 @@
 
 MultiQC analyses were performed
 
+### Running MultiQC
 ```
-Running data /home/nazeefa/dinoflagellates/MMETSP03/Analysis
-multiqc ./ ./multiQC/ ----
+multiqc ./ ./multiQC/
+```
+```
+Running data in:
+/home/nazeefa/dinoflagellates/MMETSP03/Analysis
 
 Output goes to: /home/nazeefa/dinoflagellates/MMETSP03/Analysis/multiQC
 ```
