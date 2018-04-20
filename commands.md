@@ -28,6 +28,11 @@ for file in *.fa
 do mv "$file" "${file%.fa}.txt"
 done
 ```
+or
+
+```
+rename '59' 60 *.bam
+```
 
 ### Finding a folder
 ```
