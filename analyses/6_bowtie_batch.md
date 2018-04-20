@@ -7,18 +7,8 @@
  * Running .fa file against all fastq files of seven samples (shown below)
  
  * We expect two bam files for each i.e. one from aligning the reads to the assembly (*.bam) + one from indexing via samtools (*.bai)
- 
- * Output file naming:
- 
-  * **SHTV_59_0_bowtie2_SHTV_3**
 
-* SHTV-5_3 (60):
-
- * Running against all seven samples (shown below)
-
-* SHTV-5_30 (61):
-
- * Running against all seven samples (shown below)
+#### Batch Run:
 
 | SRR + Sample Name          | SHTV-5_0 (59)      |  SHTV-5_3 (60) | SHTV-5_30 (61)	| 
 |--------                    | -------------------|-----           |---	       	    | 
@@ -30,6 +20,19 @@
 | SRR1296796 + SHHI-4_30 (69)|        -          |   -	           |  	-            | 	       
 | SRR1294439 + PAER-2_0 (70)|         -          |   -	           |  	-            |        
 | SRR1294440 + PAER-2_3 (71)|         -          |   -	           |  	-            | 	     
+
+#### Batch Run - Results:
+
+| SRR + Sample Name          | SHTV-5_0 (59)      |  SHTV-5_3 (60) | SHTV-5_30 (61)	| 
+|--------                    | -------------------|-----           |---	       	    | 
+| SRR1296786 + SHTV-5_0 (59) |         X          |   -	           |  	-            | 
+| SRR1296972 +  SHTV-5_3 (60)|         -          |   X	           |  	-            | 
+| SRR1294400 + SHTV-5_30 (61)|         -         |   -	           |  	X            | 	       
+| SRR1296793 + SHHI-4_0 (67)|         -          |   -	           |  	-            |        
+| SRR1296794 + SHHI-4_3 (68)|         -          |   -	           |  	-            | 	       
+| SRR1296796 + SHHI-4_30 (69)|        -          |   -	           |  	-            | 	       
+| SRR1294439 + PAER-2_0 (70)|         -          |   -	           |  	-            |        
+| SRR1294440 + PAER-2_3 (71)|         -          |   -	           |  	-            | 	    
 
 To-do list:
 
