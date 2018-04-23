@@ -23,8 +23,10 @@
 
 #### Results - Alignment Rate:
 
-For alignments of (forward and reverse) reads back to assembly of sample itself, see files named as: bowtie_align_59.txt
+For alignment info of (forward and reverse) reads back to assembly of sample itself, see files named as: bowtie_align_59.txt
 
+| SRR + Sample Name (Forward & Reverse reads)    | 	                 REFERENCE                         | 
+|--------                                        | ------------------- -------------   -----------	    | 
 | SRR + Sample Name (Forward & Reverse reads)    | SHTV-5_0 (59)      |  SHTV-5_3 (60) | SHTV-5_30 (61)	| 
 |--------                                        | -------------------|-------------   |-----------	    | 
 | SRR1296786 + SHTV-5_0 (59)                     |         94.54%     |   79.33%       |  	93.12%       | 
