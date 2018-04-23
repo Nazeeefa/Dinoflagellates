@@ -37,8 +37,13 @@ rename '59' 60 *.bam
 ### Finding a folder
 ```
 ls -l Data | grep <folder keyword/letter>
+```
+### Obtaining full path of file
 
 ```
+readlink -f [file-name]
+```
+
 ### Displaying list of files in all folders
 ```
 find $(home/nazeefa/dinoflagellates/MMETSP03/Analysis_2) -type f
