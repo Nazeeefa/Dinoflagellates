@@ -21,8 +21,8 @@ Key:
 
 + 67 = [Click on 'All runs'](https://www.ncbi.nlm.nih.gov/sra/?term=SRR1294439)*
 + PSU = Practical Salinity Unit; 1 g salt per 1000 grams of water = 1 PSU [Source](https://podaac.jpl.nasa.gov/SeaSurfaceSalinity)
-+ SH = *Scrippsiella Hangoei* (Habitat: Sediment)
-+ PA = *Peridinium aciculiferum* (Habitat: Freshwater)
++ SH = *Scrippsiella Hangoei* //  (Habitat: Sediment, previously known as *A. malmogiense*)
++ PA = *Peridinium aciculiferum* (Habitat: Freshwater, previously known as *A. aciculiferum*)
 
 ### Data for Analyses
 
