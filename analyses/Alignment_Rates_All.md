@@ -38,8 +38,12 @@
 | **SRR1294440 + PAER-2_3 (71)**                     |     80.31%         |   **80.95%**       | 
 
 
-#### For reads aligning back to corresponding assembly (contig):
+#### For reads aligning back to corresponding assembly (contigs):
 
 The results indicate high quality (see **bold figures**) i.e. more than ~70% of the aligned reads/fragments are mapped as proper pairs back to the assembly (yielding concordant alignments 1 or more times to the reconstructed transcriptome). In case of low quality, deeper sequencing and assembly of more reads would be expected for improvements.
 
-The subsequent analyses will involve using SHTV-5 samples (0, 30, 30) as references and running against all including each other (but not sample against itself as it has already been done).
+#### For reads aligning back to reference assembly (contigs):
+
+The subsequent analyses will involve using each strain/sample as references, and were performed against all including related samples (except itself i.e. corresponding assembly/contig as it has already been done).
+
+The results 
