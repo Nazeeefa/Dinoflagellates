@@ -1,4 +1,4 @@
-## FOR MMETSP0360 (SHTV-5, 30 PSU) against all:
+## FOR MMETSP0361 (SHTV-5, 30 PSU) against all:
 
 ```
 samples="SHTV-5_0 SHTV-5_3 SHHI-4_0 SHHI-4_3 SHHI-4_30 PAER-2_0 PAER-2_3"
