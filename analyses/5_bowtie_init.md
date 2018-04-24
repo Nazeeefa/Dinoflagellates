@@ -15,7 +15,7 @@ Prior to **running the alignment**, library index for the Trinity assembly (RNA-
 ```
 bowtie2-build MMETSP0360.nt.fa MMETSP0360
 ```
-#### Aligning the reads to the assembly
+#### Aligning the reads to the corresponding assembly (contig)
 
 Alignment (for paired-end reads) is then performed to capture the read alignment statistics.
 
@@ -28,7 +28,3 @@ Flags in above commands:
 * --no-unal = suppress SAM records for unaligned reads
 * -q = query input files Nare FASTQ .fq/.fastq (default)
 * -x = index file(s) with .bt2 extensions
-
-The results indicate high quality assembly i.e. more than ~70% of the aligned reads/fragments are mapped as proper pairs back to the assembly (yielding concordant alignments 1 or more times to the reconstructed transcriptome). In case of low quality, deeper sequencing and assembly of more reads would be expected for improvements.
-
-Here, the reads are aligend to themselves. The subsequent analyses will involve using SHTV-5 samples (0, 30, 30) as references and running against all including each other (but not sample against itself as it has already been done).
