@@ -8,7 +8,7 @@ file names beginning with certain words: mv 59_bowtie2_* 59_bowtie_samples (dir 
 
 ## FOR MMETSP0359 (SHTV-5, 0 PSU) against all:
 
-Flags in bowtie commands:
+Flags used in bowtie command (in following script):
 
 * --local = local alignment; ends might be soft clipped (off)
 * --no-unal = suppress SAM records for unaligned reads
