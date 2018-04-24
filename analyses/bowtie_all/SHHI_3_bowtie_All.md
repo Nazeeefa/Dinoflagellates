@@ -1,4 +1,12 @@
 ## FOR MMETSP0368 (SHHI-4, 3 PSU) against all:
+
+Flags used in bowtie command (in following script):
+
+* --local = local alignment; ends might be soft clipped (off)
+* --no-unal = suppress SAM records for unaligned reads
+* -q = query input files Nare FASTQ .fq/.fastq (default)
+* -x = index file(s) with .bt2 extensions
+
 ```
 samples="SHTV-5_0 SHTV-5_3 SHTV-5_30 SHHI-4_0 SHHI-4_30 PAER-2_0 PAER-2_3
 ```
