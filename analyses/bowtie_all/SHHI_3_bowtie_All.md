@@ -4,7 +4,7 @@ Flags used in bowtie command (in following script):
 
 * --local = local alignment; ends might be soft clipped (off)
 * --no-unal = suppress SAM records for unaligned reads
-* -q = query input files Nare FASTQ .fq/.fastq (default)
+* -q = query input files are FASTQ .fq/.fastq (default)
 * -x = index file(s) with .bt2 extensions
 
 ```
