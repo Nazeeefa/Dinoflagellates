@@ -23,18 +23,9 @@
 
 #### Results - Alignment Rate:
 
-For alignment info of (forward and reverse) reads back to assembly of sample itself, see files named as: bowtie_align_59.txt
+See alignment_rates_all.md in "bowtie_all" directory.
 
-| SRR + Sample Name (Forward & Reverse reads)    | SHTV-5_0 (59)      |  SHTV-5_3 (60) | SHTV-5_30 (61)	| 
-|--------                                        | -------------------|-------------   |-----------	    | 
-| SRR1296786 + SHTV-5_0 (59)                     |         94.54%     |   79.33%       |  	93.12%       | 
-| SRR1296972 +  SHTV-5_3 (60)                    |         94.30%     |   80.88%	      |  	93.08%       | 
-| SRR1294400 + SHTV-5_30 (61)                    |      92.65%        |  75.79%        |  	93.18%       | 	       
-| SRR1296793 + SHHI-4_0 (67)                     |    86.41%          |  69.82%        |  	85.76%       |        
-| SRR1296794 + SHHI-4_3 (68)                     |    85.98%          |   69.22%       |  	85.47%       | 	       
-| SRR1296796 + SHHI-4_30 (69)                    |   83.35%           |   66.43%       |  	83.25%       | 	       
-| SRR1294439 + PAER-2_0 (70)                     |   75.31%           |   61.33%       |  	74.91%       |        
-| SRR1294440 + PAER-2_3 (71)                     |    74.35%          |   60.14%       |  	74.06%       | 	    
+For alignment info of (forward and reverse) reads back to assembly of sample itself, see files named as: bowtie_align_59.txt  
 
 - ABySS to see how fasta files were generated
 
