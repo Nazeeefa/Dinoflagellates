@@ -1,7 +1,5 @@
 ### Reference: SHTV-5
 
-For reads aligning back to corresponding 
-
 | SRR + Sample Name (Forward & Reverse reads)    | SHTV-5_0 (59)      |  SHTV-5_3 (60) | SHTV-5_30 (61)	| 
 |--------                                        | -------------------|-------------   |-----------	    | 
 | **SRR1296786 + SHTV-5_0 (59)**                     |         **94.54%**     |   79.33%       |  	93.12%       | 
