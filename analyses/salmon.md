@@ -25,26 +25,3 @@ transcript abundance from RNA-seq reads
 Salmon-latest_linux_x86_64/bin/salmon quant --help
 /home/nazeefa/bin/Salmon-latest_linux_x86_64/bin/salmon quant --help-alignments
 ```
-#### Terminal output, example:
-
-WARNING: Detected suspicious pair --- 
-    The names are different: <br>
-    read1 : SRR1296786.7822170 <br>
-    read2 : SRR1296786.25797759 <br>
-    The proper-pair statuses are inconsistent: <br>
-read1 [SRR1296786.7822170] : proper-pair; mapped; matemapped <br>
-read2 : [SRR1296786.7822170] : no proper-pair; mapped; matemapped <br>
-
-...
-
-Completed first pass through the alignment file. <br>
-Total # of mapped reads : 26477867 <br>
-#(number) of uniquely mapped reads : 26477866 <br>
-#(number) ambiguously mapped reads : 1 <br>
-
-[2018-05-04 03:13:17.845] [jointLog] [info] Computed 87582 rich equivalence classes for further processing <br>
-[2018-05-04 03:13:17.845] [jointLog] [info] Counted 26477867 total reads in the equivalence classes <br>
-[2018-05-04 03:13:17.870] [jointLog] [info] starting optimizer <br>
-[2018-05-04 03:13:17.903] [jointLog] [info] Marked 0 weighted equivalence classes as degenerate <br>
-[2018-05-04 03:13:17.904] [jointLog] [info] iteration = 0 | max rel diff. = 1 <br>
-[2018-05-04 03:13:18.001] [jointLog] [info] iteration = 100 | max rel diff. = 1.77636e-16 <br>
