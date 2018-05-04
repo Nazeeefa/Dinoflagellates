@@ -22,6 +22,6 @@ transcript abundance from RNA-seq reads
 ```
 ### specific flag - example:
 ```
-Salmon-latest_linux_x86_64/bin/salmon quant --help
-/home/nazeefa/bin/Salmon-latest_linux_x86_64/bin/salmon quant --help-alignments
+/Salmon-latest_linux_x86_64/bin/salmon quant --help
+/Salmon-latest_linux_x86_64/bin/salmon quant --help-alignments
 ```
