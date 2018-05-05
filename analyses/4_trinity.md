@@ -24,6 +24,10 @@ cat ./*
 ```
 cat file.nt.fa | grep -v ">" | wc -l
 ```
+### List of sequence ID-lines
+```
+less  MMETSP0359.nt.fa | grep ">" $1
+```
 
 | Sample Number | Trinity | N50 Values | Contig Length | 
 |--------    | ----------| -----------| -----------|
