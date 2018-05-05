@@ -20,6 +20,11 @@ Go to assembly_stats folder and check ("read") all files, with same extension (.
 cat ./*
 ```
 
+### Count
+```
+cat file.nt.fa | grep -v ">" | wc -l
+```
+
 | Sample Number | Trinity | N50 Values | Contig Length | 
 |--------    | ----------| -----------| -----------|
 | 59 |  81854 	 | Y |  |
