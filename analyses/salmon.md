@@ -19,6 +19,8 @@ transcript abundance from RNA-seq reads
 * -o Output quantification directory
 * -t FASTA format file containing target transcripts
 
+["Names are different"](https://github.com/COMBINE-lab/salmon/issues/140)
+
 ### For a list of flags:
 ```
 /home/nazeefa/bin/Salmon-latest_linux_x86_64/bin/salmon
