@@ -6,19 +6,23 @@ Each biological replicate (eg. SRR129...) contains a pair of fastq files (eg. SR
  
 ### Experimental salinity level for each strain
 
-| SRR        | Salinity (Sample #)|  0 PSU | 3 PSU	| 30 PSU	| Done | Read Length (Forward & Reverse)|
-|--------    | -------------------|-----   |---	   |---	    | ---  | -----|
-| SRR1296786 |  SHTV-5_0 (59) 	     |   	-    |  	    |   	    |     |  100 -> 50 |
-| SRR1296972 |  SHTV-5_3 (60) 	     |   	    |  - 	  |   	    | Y    |   50 |
-| SRR1294400 | SHTV-5_30 (61)	       |   	    |   	  |  - 	 | Y       | 101  |
-| SRR1296793 | SHHI-4_0 (67)*       |   -    |  	   |   	  |        |  50 |
-| SRR1296794 | SHHI-4_3 (68)	       |   	    |  -	  |   	  | Y       |  50 |
-| SRR1296796 | SHHI-4_30 (69)	       |    	   |  	   |   -	 | Y       |  50 |
-| SRR1294439 | PAER-2_0 (70)       |    -    |   X   |   X   |         | 50 |
-| SRR1294440 | PAER-2_3 (71)	       |   	    |  -	  |   	  | Y       |   50 |
+| SRR        | Salinity (Sample #)|  0 PSU | 3 PSU	| 30 PSU	| Done | Read Length (Forward & Reverse)| Number of Sequence** |
+|--------    | -------------------|-----   |---	   |---	    | ---  | -----| --- | 27365859 |
+| SRR1296786 |  SHTV-5_0 (59) 	     |   	-    |  	    |   	    |     |  100 -> 50 | 
+| SRR1296972 |  SHTV-5_3 (60) 	     |   	    |  - 	  |   	    | Y    |   50 | |
+| SRR1294400 | SHTV-5_30 (61)	       |   	    |   	  |  - 	 | Y       | 101  | |
+| SRR1296793 | SHHI-4_0 (67)*       |   -    |  	   |   	  |        |  50 | |
+| SRR1296794 | SHHI-4_3 (68)	       |   	    |  -	  |   	  | Y       |  50 | |
+| SRR1296796 | SHHI-4_30 (69)	       |    	   |  	   |   -	 | Y       |  50 | |
+| SRR1294439 | PAER-2_0 (70)       |    -    |   X   |   X   |         | 50 | |
+| SRR1294440 | PAER-2_3 (71)	       |   	    |  -	  |   	  | Y       |   50 | |
 
 Key:
 
+##### ** command: count total number of sequences
+```
+zcat file.fastq.gz (see Analysis_2 folder) | paste - - - - | cut -f 1 | grep -c "@SRR"
+```
 + 67 = [Click on 'All runs'](https://www.ncbi.nlm.nih.gov/sra/?term=SRR1294439)*
 + PSU = Practical Salinity Unit; 1 g salt per 1000 grams of water = 1 PSU [Source](https://podaac.jpl.nasa.gov/SeaSurfaceSalinity)
 + SH = *Scrippsiella Hangoei* //  (Habitat: Sediment, previously known as *A. malmogiense*)
