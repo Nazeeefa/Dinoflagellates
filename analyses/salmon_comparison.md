@@ -8,9 +8,9 @@ drwxr-xr-x 2 nazeefa users       6 May  6 20:08 libParams
 
 ### Output:
 
-#### TSV format file listing the name (Name) of each transcript, its length (Length), effective length, and its abundance in terms of Transcripts Per Million (TPM) and estimated number of reads (NumReads) originating from this transcript
+#### TSV format file listing the transcript identifier (Name) of each transcript, its length (Length), effective length, and its abundance in terms of Transcripts Per Million (TPM)** and number of RNA-Seq fragments predicted to be originated from that transcript (NumReads)
 
-Name    Length  EffectiveLength TPM     NumReads
+| Name  |  Length | EffectiveLength | TPM   |  NumReads |
 CAMNT_0050930533        1444    1390.904        10.357231       378.000000
 CAMNT_0050930535        1151    1097.904        9.094648        262.000000
 CAMNT_0050930537        1561    1507.904        15.214995       602.000000
@@ -24,6 +24,7 @@ CAMNT_0050930791        354     303.892 25.458098       203.000000
 [2018-05-06 20:25:05.248] [jointLog] [info] Computed 74271 rich equivalence classes for further processing
 [2018-05-06 20:25:05.248] [jointLog] [info] Counted 14592308 total reads in the equivalence classes 
 
+** TPM indicates the normalized expression values for the expression of that transcript in the sample
 ------------------------------------------------------------------------------------------------------------------------
 ------------------------------------------------------------------------------------------------------------------------
 
@@ -41,7 +42,7 @@ CAMNT_0050930791        354     303.892 25.458098       203.000000
 
 ### Output:
 
-#### TSV format file listing the name (Name) of each transcript, its length (Length), effective length, and its abundance in terms of Transcripts Per Million (TPM) and estimated number of reads (NumReads) originating from this transcript
+#### TSV format file listing the transcript identifier (Name) of each transcript, its length (Length), effective length, and its abundance in terms of Transcripts Per Million (TPM) and estimated number of reads (NumReads) originating from this transcript
 
 Name    Length  EffectiveLength TPM     NumReads
 CAMNT_0050930533        1444    1264.065        7.224368        377.000000
