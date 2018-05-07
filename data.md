@@ -7,10 +7,10 @@ Each biological replicate (eg. SRR129...) contains a pair of fastq files (eg. SR
 ### Experimental salinity level for each strain
 
 | SRR        | Salinity (Sample #)|  0 PSU | 3 PSU	| 30 PSU	| Done | Read Length (Forward & Reverse)| Number of Sequence** |
-|--------    | -------------------|-----   |---	   |---	    | ---  | -----| --- | 27365859 |
-| SRR1296786 |  SHTV-5_0 (59) 	     |   	-    |  	    |   	    |     |  100 -> 50 | 
+|--------    | -------------------|-----   |---	   |---	    | ---  | -----| --- |
+| SRR1296786 |  SHTV-5_0 (59) 	     |   	-    |  	    |   	    |   |  100 -> 50 |  27365859 |
 | SRR1296972 |  SHTV-5_3 (60) 	     |   	    |  - 	  |   	    | Y    |   50 | |
-| SRR1294400 | SHTV-5_30 (61)	       |   	    |   	  |  - 	 | Y       | 101  | |
+| SRR1294400 | SHTV-5_30 (61)	       |   	    |   	  |  - 	 | Y       | 101 | |
 | SRR1296793 | SHHI-4_0 (67)*       |   -    |  	   |   	  |        |  50 | |
 | SRR1296794 | SHHI-4_3 (68)	       |   	    |  -	  |   	  | Y       |  50 | |
 | SRR1296796 | SHHI-4_30 (69)	       |    	   |  	   |   -	 | Y       |  50 | |
