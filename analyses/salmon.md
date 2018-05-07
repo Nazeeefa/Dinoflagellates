@@ -1,6 +1,10 @@
 ### Salmon v0.9.1
 Estimates transcript-level abundance from RNA-seq read data
 
+### Bulding an index
+```
+/home/nazeefa/bin/Salmon-latest_linux_x86_64/bin/salmon index -t /home/nazeefa/dinoflagellates/MMETSP03/Data/assembly/60_bowtie_3/MMETSP0360.nt.fa -i athal_index .
+```
 #### Transcript expression quantitation using Salmon: alignment-based mode
 
 ##### in sample directory:
