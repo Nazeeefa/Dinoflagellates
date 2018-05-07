@@ -1,4 +1,5 @@
 ### Salmon v0.9.1
+Estimates transcript-level abundance from RNA-seq read data
 
 #### Transcript expression quantitation using Salmon: alignment-based mode
 
@@ -34,11 +35,11 @@ transcript abundance from RNA-seq reads
 
 | Sample Number | Salmon |
 |--------    | ----------|
-| 59 |          81854 	 | 
-| 60 |          69908 	 |
-| 61 |          83907 	 |
-| 67 |          76640 	 |
-| 68 |           77388 	 |
-| 69 |           80845 	 |
-| 70 |           64738 	 |
-| 71 |          66306 	 | 
+| 59 |           	 | 
+| 60 |           	 |
+| 61 |           	 |
+| 67 |           	 |
+| 68 |            	 |
+| 69 |            	 |
+| 70 |            	 |
+| 71 |          	 | 
