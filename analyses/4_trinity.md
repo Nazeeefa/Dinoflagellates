@@ -29,16 +29,16 @@ cat file.nt.fa | grep -v ">" | wc -l
 less  MMETSP0359.nt.fa | grep ">" $1
 ```
 
-| Sample Number | Trinity | N50 Values | Contig Length | 
-|--------    | ----------| -----------| -----------|
-| 59 |  81854 	 | Y |  |
-| 60 |  69908 	 | Y |  |
-| 61 |  83907 	 ||  |
-| 67 |  76640 	 ||  |
-| 68 |  77388 	 ||  |
-| 69 |  80845 	 ||  |
-| 70 |  64738 	 ||  |
-| 71 |  66306 	 ||  |
+| Sample Number | Trinity |
+|--------    | ----------|
+| 59 |  81854 	 | Y | 
+| 60 |  69908 	 | Y | 
+| 61 |  83907 	 |  |
+| 67 |  76640 	 |  |
+| 68 |  77388 	 |  |
+| 69 |  80845 	 |  |
+| 70 |  64738 	 |  |
+| 71 |  66306 	 |  |
 
 Total number of reconstructed transcripts match up identically to total sequence count. The total number of 'genes' reported is same as total number of transcripts. In this case, given that it's original assembly and transcripts are not reported as alternative isoforms for the same gene, same amount for 'gene' and 'transcript' identifiers would be expected.
 
