@@ -10,17 +10,17 @@ drwxr-xr-x 2 nazeefa users       6 May  6 20:08 libParams
 
 #### TSV format file listing the transcript identifier (Name) of each transcript, its length (Length), effective length, and its abundance in terms of Transcripts Per Million (TPM)** and number of RNA-Seq fragments predicted to be originated from that transcript (NumReads)
 
-| Name  |  Length | EffectiveLength | TPM   |  NumReads  |
+| Name                  |  Length | EffectiveLength | TPM   |  NumReads  |
 |----------------------------------------------------------------------------|
 |CAMNT_0050930533        1444    1390.904        10.357231       378.000000 |
 | CAMNT_0050930535        1151    1097.904        9.094648        262.000000 |
 | CAMNT_0050930537        1561    1507.904        15.214995       602.000000 |
-| CAMNT_0050930541        489     438.191 6.696932        77.000000          |
+| CAMNT_0050930541        489     438.191         6.696932        77.000000  |
 | CAMNT_0050930543        1721    1667.904        11.379084       498.000000 |
-| CAMNT_0050930783        480     429.237 29.299886       330.000000         |
-| CAMNT_0050930785        269     219.459 15.976563       92.000000          |
+| CAMNT_0050930783        480     429.237         29.299886       330.000000 |
+| CAMNT_0050930785        269     219.459         15.976563       92.000000  |
 | CAMNT_0050930789        1183    1129.904        6.745862        200.000000 |
-| CAMNT_0050930791        354     303.892 25.458098       203.000000         |
+| CAMNT_0050930791        354     303.892         25.458098       203.000000  |
 
 [2018-05-06 20:25:05.248] [jointLog] [info] Computed 74271 rich equivalence classes for further processing
 [2018-05-06 20:25:05.248] [jointLog] [info] Counted 14592308 total reads in the equivalence classes 
