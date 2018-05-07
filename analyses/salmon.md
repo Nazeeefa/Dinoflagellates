@@ -30,3 +30,15 @@ transcript abundance from RNA-seq reads
 /Salmon-latest_linux_x86_64/bin/salmon quant --help
 /Salmon-latest_linux_x86_64/bin/salmon quant --help-alignments
 ```
+### Stats
+
+| Sample Number | Salmon |
+|--------    | ----------|
+| 59 |          81854 	 | 
+| 60 |          69908 	 |
+| 61 |          83907 	 |
+| 67 |          76640 	 |
+| 68 |           77388 	 |
+| 69 |           80845 	 |
+| 70 |           64738 	 |
+| 71 |          66306 	 | 
