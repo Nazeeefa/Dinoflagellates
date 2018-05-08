@@ -37,9 +37,9 @@ transcript abundance from RNA-seq reads
 ```
 ### Stats
 
-| Sample Number | Total of "NumReads" (1) | Total Number of Reads (2) | Mapping Rate (3) |
-|--------       | ----------          | --------------------  | ----------  |
-| 59 |           14592308             | 16785889              |    86.932 % |
+| Sample Number | Average of "NumReads" | Total of "NumReads" (1) | Total Reads (2) | Mapping Rate (3) |
+|--------       | ----------            | ------------------------| -----------------| ----------  |
+| 59 |           208.736 reads            | 14592308  | 16785889              |    86.932 % |
 | 60 |           	 |
 | 61 |           	 |
 | 67 |           	 |
@@ -48,11 +48,15 @@ transcript abundance from RNA-seq reads
 | 70 |            	 |
 | 71 |          	 | 
 
+#### (0) Average of "NumReads"
+´´´
+cat 60_quant.sf | cut -f 1,5 | awk '{sum+=$2/69908 ; print $0} END{print "sum=",sum}'
+´´´
 #### (1) Counting total of "NumReads"
 ´´´
 cat 60_quant.sf | cut -f 1,5 | awk '{sum+=$2 ; print $0} END{print "sum=",sum}'
 ´´´
-#### (2) Total Number of Reads (in FASTQ file)
+#### (2) Total Reads (in FASTQ file)
 ```
 ```
 
