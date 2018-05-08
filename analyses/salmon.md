@@ -37,9 +37,9 @@ transcript abundance from RNA-seq reads
 ```
 ### Stats
 
-| Sample Number | Salmon |
-|--------    | ----------|
-| 59 |           	 | 
+| Sample Number | Total of "NumReads" (1) | Total Number of Reads (2) | Mapping Rate (3) |
+|--------       | ----------          | --------------------  | ----------  |
+| 59 |           14592308             | 16785889              |    86.932 % |
 | 60 |           	 |
 | 61 |           	 |
 | 67 |           	 |
@@ -47,3 +47,18 @@ transcript abundance from RNA-seq reads
 | 69 |            	 |
 | 70 |            	 |
 | 71 |          	 | 
+
+### (1) Counting total of "NumReads"
+´´´
+cat 60_quant.sf | cut -f 1,5 | awk '{sum+=$2 ; print $0} END{print "sum=",sum}'
+´´´
+### (2) Total Number of Reads (in FASTQ file)
+```
+```
+
+### (3) Mapping Rate Calculation
+Count total of "NumReads" and divide by total number of reads in original fastq file** (it's same for forward and reverse)
+** see "Analysis_2/fastq_samples" folder, most files are linked to files in bowtie folders (in assembly directory)
+´´´
+cat sample_quant.sf | cut -f 1,5 | awk '{sum+=$2/16785889 * 100 ; print $0} END{print "sum=",sum ,"%"}'
+´´´
