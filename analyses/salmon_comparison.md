@@ -1,8 +1,7 @@
 ## Test Sample: SHTV-5_3
 
 ### Approach A
-
->>> Usage: fasta and bam file
+Usage: fasta and bam file
 
 -rw-r--r-- 1 nazeefa users     299 May  6 20:08 cmd_info.json
 drwxr-xr-x 2 nazeefa users       6 May  6 20:08 libParams
