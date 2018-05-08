@@ -1,7 +1,7 @@
 ### Salmon v0.9.1
 Estimates transcript-level abundance from RNA-seq read data
 
-### Bulding an index
+### Building an index
 ```
 /home/nazeefa/bin/Salmon-latest_linux_x86_64/bin/salmon index -t /home/nazeefa/dinoflagellates/MMETSP03/Data/assembly/60_bowtie_3/MMETSP0360.nt.fa -i athal_index .
 ```
@@ -48,15 +48,15 @@ transcript abundance from RNA-seq reads
 | 70 |            	 |
 | 71 |          	 | 
 
-### (1) Counting total of "NumReads"
+#### (1) Counting total of "NumReads"
 ´´´
 cat 60_quant.sf | cut -f 1,5 | awk '{sum+=$2 ; print $0} END{print "sum=",sum}'
 ´´´
-### (2) Total Number of Reads (in FASTQ file)
+#### (2) Total Number of Reads (in FASTQ file)
 ```
 ```
 
-### (3) Mapping Rate Calculation
+#### (3) Mapping Rate Calculation
 Count total of "NumReads" and divide by total number of reads in original fastq file** (it's same for forward and reverse)
 ** see "Analysis_2/fastq_samples" folder, most files are linked to files in bowtie folders (in assembly directory)
 ´´´
