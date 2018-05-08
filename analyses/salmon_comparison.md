@@ -1,17 +1,18 @@
-## Approach A
+## Test Sample: SHTV-5_3
 
-Usage: fasta and bam file
+### Approach A
+
+>>> Usage: fasta and bam file
 
 -rw-r--r-- 1 nazeefa users     299 May  6 20:08 cmd_info.json
 drwxr-xr-x 2 nazeefa users       6 May  6 20:08 libParams
--rw-r--r-- 1 nazeefa users 3452426 May  6 20:25 60_quant.sf
 
-### Output:
+### Output - 60_quant.sf:
 
 #### TSV format file listing the transcript identifier (Name) of each transcript, its length (Length), effective length, and its abundance in terms of Transcripts Per Million (TPM)** and number of RNA-Seq fragments predicted to be originated from that transcript (NumReads)
 
 | Name                  |  Length | EffectiveLength | TPM   |  NumReads  |
-|----------------------------------------------------------------------------|
+|-----------------------|---------|-----------------|-------|--------------------|
 |CAMNT_0050930533        1444    1390.904        10.357231       378.000000 |
 | CAMNT_0050930535        1151    1097.904        9.094648        262.000000 |
 | CAMNT_0050930537        1561    1507.904        15.214995       602.000000 |
@@ -23,9 +24,17 @@ drwxr-xr-x 2 nazeefa users       6 May  6 20:08 libParams
 | CAMNT_0050930791        354     303.892         25.458098       203.000000  |
 
 [2018-05-06 20:25:05.248] [jointLog] [info] Computed 74271 rich equivalence classes for further processing
-[2018-05-06 20:25:05.248] [jointLog] [info] Counted 14592308 total reads in the equivalence classes 
+[2018-05-06 20:25:05.248] [jointLog] [info] Counted 14592308*** total reads in the equivalence classes 
 
 ** TPM indicates the normalized expression values for the expression of that transcript in the sample
+*** 14592308 is total of values in NumReads column
+
+#### Mapping Rate was manually calculated
+```
+cat 60_quant.sf | cut -f 1,5 | awk '{sum+=$2/16785889 * 100 ; print $0} END{print "sum=",sum ,"%"}'
+```
+For all mapping rate calculations, see "salmon.md" file
+
 ------------------------------------------------------------------------------------------------------------------------
 ------------------------------------------------------------------------------------------------------------------------
 
@@ -63,6 +72,10 @@ CAMNT_0050930791        354     180.390 19.303505       143.753941
 drwxr-xr-x 2 nazeefa users      26 May  7 09:44 libParams
 -rw-r--r-- 1 nazeefa users 3422555 May  7 09:44 quant.sf
 
-[2018-05-07 09:44:57.170] [jointLog] [info] Computed 81241 rich equivalence classes for further processing
-[2018-05-07 09:44:57.170] [jointLog] [info] Counted 12871515 total reads in the equivalence classes 
-[2018-05-07 09:44:57.172] [jointLog] [info] Mapping rate = 76.6806%
+Computed 81241 rich equivalence classes for further processing
+Counted 12871515 total reads in the equivalence classes 
+Mapping rate = 76.6806%
+
+#### Mapping Rate was calculated the following way:
+```
+```
