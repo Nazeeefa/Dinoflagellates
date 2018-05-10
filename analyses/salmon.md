@@ -54,7 +54,10 @@ transcript abundance from RNA-seq reads
 
 #### (0) Average of "NumReads"
 ```
-cat 60_quant.sf | cut -f 1,5 | awk '{sum+=$2/69908 ; print $0} END{print "sum=",sum}'
+total of transcripts: cat 60_quant.sf | cut -f 1 | wc -l
+```
+```
+cat 60_quant.sf | cut -f 1,5 | awk '{sum+=$2/total_transcripts ; print $0} END{print "sum=",sum}'
 ```
 #### (1) Counting total of "NumReads"
 ```
