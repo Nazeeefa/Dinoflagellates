@@ -20,11 +20,11 @@ Flags in the above command indicate the following:
 * quant: Perform dual-phase, alignment-based estimation of
 transcript abundance from RNA-seq reads
 
-* -l Format string describing the library type
+* -l Format string describing the library type which is A i.e. 
 * -o Output quantification directory
 * -t FASTA format file containing target transcripts
 
-["Names are different"](https://github.com/COMBINE-lab/salmon/issues/140)
+["Salmon-Issue: Names are different"](https://github.com/COMBINE-lab/salmon/issues/140)
 
 ### For a list of flags:
 ```
@@ -35,7 +35,11 @@ transcript abundance from RNA-seq reads
 /Salmon-latest_linux_x86_64/bin/salmon quant --help
 /Salmon-latest_linux_x86_64/bin/salmon quant --help-alignments
 ```
-### Stats
+### Output: Files
+
+.json file = meta information about the run, including stats such as the number of observed and mapped fragments, details of the bias modeling etc
+
+### RESULTS: Stats
 
 | Sample Number | Average of "NumReads" | Total of "NumReads" (1) | Total Reads (2) | Mapping Rate (3) |
 |--------       | ----------            | ------------------------| -----------------| ----------  |
