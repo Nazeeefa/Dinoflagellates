@@ -41,16 +41,16 @@ transcript abundance from RNA-seq reads
 
 ### RESULTS: Stats
 
-| Sample Number | Average of "NumReads" | Total of "NumReads" (1) | Total Reads (2) | Mapping Rate (3) |
+| Sample Number | Average of "NumReads" | Total of "NumReads" (1) | Total Reads (2) | Mapping Rate % (3) |
 |--------       | ----------            | ------------------------| -----------------| ----------  |
-| 59 |           208.736 reads            | 14592308  | 16785889              |    86.932 % |
-| 60 |           	 |
-| 61 |           	 |
-| 67 |           	 |
-| 68 |            	 |
-| 69 |            	 |
-| 70 |            	 |
-| 71 |          	 | 
+| 59            | 208.736 reads         | 14592308                | 16785889         |    86.932   |
+| 60            | reads                 |                |          |       |
+| 61            |  reads                |                 |          |       |
+| 67            |  reads                |                 |          |       |
+| 68            |  reads                |                |          |       |
+| 69            |  reads                |                 |          |       |
+| 70            |  reads                |                 |          |       |
+| 71            | reads                 |                 |          |       |
 
 #### (0) Average of "NumReads"
 ```
