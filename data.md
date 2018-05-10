@@ -2,6 +2,12 @@
 
 The data contains paired-end FASTQ formatted Illlumina read files for each of the three strains (SHTV, SHHI, and PAER). All RNA-Seq data can be found at [iMicrobe](https://www.imicrobe.us/#/investigators/180). 
 
+### Environmental Conditions
+
+| Sample     | Name, Strain                  |  Habitat, Collection site  |
+|--------    | -------------------           |-----                       |
+|MMETSP0359   | Scrippsiella Hangoei, SHTV-5 | Sediment, Baltic Sea       |
+
 Each biological replicate (eg. SRR129...) contains a pair of fastq files (eg. SRR129.._1.fastq.gz for the 'left/forward' and SRR129..._2.fastq.gz for the 'right'/reverse read of the paired end sequences).
  
 ### Experimental salinity level for each strain
