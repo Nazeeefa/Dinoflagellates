@@ -16,7 +16,7 @@ bowtie2-build MMETSP0360.nt.fa MMETSP0360
 ```
 #### Aligning the reads to the corresponding assembly (contig)
 
-A high quality transcriptome assembly is expected to have strong representation of the reads (input to the assembler). Read representation can be quantified by aligning the RNA-Seq reads back to the transcriptome assembly. Bowtie2 aligns the reads to the Trinity assembly and keep account of the read representation statistics.
+A high quality transcriptome assembly is expected to have strong representation of the reads (input to the assembler). Read representation can be quantified by aligning the RNA-Seq reads back to the assembly (in this case, contig file e.g. MMETSP0359.nt.fa). Bowtie2 aligns the reads to the contig/assembly file and keep account of the read representation statistics.
 
 Alignment (for paired-end reads) is performed to capture the read alignment statistics. Here, the reads are aligend to their corresponding assembly (contigs). (See **Alignment_Rates_All** file for complete results from bowtie).
 
