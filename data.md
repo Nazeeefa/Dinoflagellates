@@ -16,21 +16,18 @@ Each biological replicate (eg. SRR129...) contains a pair of fastq files (eg. SR
 |--------    | -------------------|-----   |---	   |---	    | ---  | -----| --- |
 | SRR1296786 |  SHTV-5_0 (59) 	     |   	-    |  	    |   	    |   |  100 -> 50 |  27365859 |
 | SRR1296972 |  SHTV-5_3 (60) 	     |   	    |  - 	  |   	    | Y    |   50 | 16785889 |
-| SRR1294400 | SHTV-5_30 (61)	       |   	    |   	  |  - 	 | Y       | 101 | |
-| SRR1296793 | SHHI-4_0 (67)*       |   -    |  	   |   	  |        |  50 | |
-| SRR1296794 | SHHI-4_3 (68)	       |   	    |  -	  |   	  | Y       |  50 | |
-| SRR1296796 | SHHI-4_30 (69)	       |    	   |  	   |   -	 | Y       |  50 | |
-| SRR1294439 | PAER-2_0 (70)       |    -    |   X   |   X   |         | 50 | |
-| SRR1294440 | PAER-2_3 (71)	       |   	    |  -	  |   	  | Y       |   50 | |
+| SRR1294400 | SHTV-5_30 (61)	       |   	    |   	  |  - 	 | Y       | 101 | 20841201 |
+| SRR1296793 | SHHI-4_0 (67)*       |   -    |  	   |   	  |        |  50 | 23109623 |
+| SRR1296794 | SHHI-4_3 (68)	       |   	    |  -	  |   	  | Y       |  50 | 22831746|
+| SRR1296796 | SHHI-4_30 (69)	       |    	   |  	   |   -	 | Y       |  50 | 24488163 |
+| SRR1294439 | PAER-2_0 (70)       |    -    |   X   |   X   |         | 50 | 20622130 |
+| SRR1294440 | PAER-2_3 (71)	       |   	    |  -	  |   	  | Y       |   50 | 21274591|
 
 Key:
 
-##### ** command: count total number of sequences
+##### ** counting total number of sequences
 ```
-QUICK version: zgrep -c '@SRR' SHTV-5_3_2.fastq.gz
-```
-```
-zcat *.fastq.gz | paste - - - - | cut -f 1 | grep -c "@SRR"
+zgrep -c '@SRR' SHTV-5_3_2.fastq.gz
 ```
 + 67 = [Click on 'All runs'](https://www.ncbi.nlm.nih.gov/sra/?term=SRR1294439)*
 + PSU = Practical Salinity Unit; 1 g salt per 1000 grams of water = 1 PSU [Source](https://podaac.jpl.nasa.gov/SeaSurfaceSalinity)
