@@ -41,27 +41,32 @@ transcript abundance from RNA-seq reads
 
 ### RESULTS: Stats
 
-| Sample Number | Average of "NumReads" | Total of "NumReads" (1) | Total Reads (2) | Mapping Rate % (3) |
-|--------       | ----------            | ------------------------| -----------------| ----------  |
-| 59            | 208.736 reads         | 14592308                | 16785889         |    86.932   |
-| 60            | reads                 |                |          |       |
-| 61            |  reads                |                 |          |       |
-| 67            |  reads                |                 |          |       |
-| 68            |  reads                |                |          |       |
-| 69            |  reads                |                 |          |       |
-| 70            |  reads                |                 |          |       |
-| 71            | reads                 |                 |          |       |
+| Sample Number | Total of Transcripts |Average of "NumReads" | Total of "NumReads" (1) | Total Reads (2) | Mapping Rate % (3) 
+|--------       |   ----------------   | ----------            | ------------------------| -----------------| ----------  |
+| 59            |                       | reads                 |                         |                 |            |
+| 60            |       69908           | 208.736 reads        |      14592308            |  16785889        |   86.932    |
+| 61            |                       | reads                |                 |          |       |
+| 67            |                       | reads                |                 |          |       |
+| 68            |                       | reads                |                |          |       |
+| 69            |                        | reads                |                 |          |       |
+| 70            |                       | reads                |                 |          |       |
+| 71            |                       | reads                 |                 |          |       |
 
-#### (0) Average of "NumReads"
+#### (0) Total of Transcripts
 ```
-total of transcripts: cat 60_quant.sf | cut -f 1 | wc -l
-```
-```
-cat 60_quant.sf | cut -f 1,5 | awk '{sum+=$2/total_transcripts ; print $0} END{print "sum=",sum}'
+total of transcripts: cat 60_quant.sf | cut -f 1 | grep -c "CAMNT" 
 ```
 #### (1) Counting total of "NumReads"
 ```
+cat 60_quant.sf | cut -f 1,5 | awk '{sum+=$2} END{print "sum=",sum}'
+```
+##### Print both columns while counting total of "NumReads"
+```
 cat 60_quant.sf | cut -f 1,5 | awk '{sum+=$2 ; print $0} END{print "sum=",sum}'
+```
+#### (0) Average of "NumReads": Total of "NumReads" / Total of Transcripts
+```
+cat 60_quant.sf | cut -f 1,5 | awk '{sum+=$2/total_transcripts ; print $0} END{print "sum=",sum}'
 ```
 #### (2) Total Reads (in FASTQ file)
 ```
