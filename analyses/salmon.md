@@ -43,7 +43,7 @@ transcript abundance from RNA-seq reads
 
 | Sample Number | Total of Transcripts |Average of "NumReads" | Total of "NumReads" (1) | Total Reads (2) | Mapping Rate % (3) 
 |--------       |   ----------------   | ----------            | ------------------------| -----------------| ----------  |
-| 59            |                       | reads                 |                         |                 |            |
+| 59            |      81854           | 323.477 reads         |    26477867             |    27365859       |       |
 | 60            |       69908           | 208.736 reads        |      14592308            |  16785889        |   86.932    |
 | 61            |                       | reads                |                 |          |       |
 | 67            |                       | reads                |                 |          |       |
@@ -54,36 +54,31 @@ transcript abundance from RNA-seq reads
 
 #### (0) Total of Transcripts
 ```
-total of transcripts: cat 60_quant.sf | cut -f 1 | grep -c "CAMNT" 
+cat 60_quant.sf | cut -f 1 | grep -c "CAMNT" 
 ```
 #### (1) Counting total of "NumReads"
 ```
 cat 60_quant.sf | cut -f 1,5 | awk '{sum+=$2} END{print "sum=",sum}'
 ```
-##### Print both columns while counting total of "NumReads"
+##### Print total of each of both columns
 ```
-cat 60_quant.sf | cut -f 1,5 | awk '{sum+=$2 ; print $0} END{print "sum=",sum}'
+transcript=$(cat 60_quant.sf | cut -f 1,5 | grep -c "CAMNT" ) | numreads=$(cat 60_quant.sf | cut -f 1,5 | awk '{numreads+=$2} END{print "numreads=", numreads}' ) | for i in {transcript,numreads}; do echo "$i = ${!i}"; done
 ```
-#### (0) Average of "NumReads": Total of "NumReads" / Total of Transcripts
+#### (0) Average of "NumReads": Total of "NumReads" / Total of Transcripts...
 ```
-transcript_total=$(cat 60_quant.sf | cut -f 1,5 | grep -c "CAMNT") | numreads_total=$(cat 60_quant.sf | cut -f 1,5 | awk '{sum+=$2} END{print "sum=",sum}') | echo $(( numreads_total / transcript_total ))
+echo $(( numreads / transcript))
 ```
-```
-transcript_total=$(cat 60_quant.sf | cut -f 1,5 | grep -c "CAMNT") | numreads_total=$(cat 60_quant.sf | cut -f 1,5 | awk '{sum+=$2}') | for i in {transcript_total,numreads_total,average_reads}; do echo "$i = ${!i}"; done
-
-transcript_total=$(cat 60_quant.sf | cut -f 1,5 | grep -c "CAMNT") | numreads_total=$(cat 60_quant.sf | cut -f 1,5 | awk '{sum+=$2}') | avg=$(echo $(( $numreads_total / transcript_total ))) | for i in {transcript_total,numreads_total,avg}; do echo "$i = ${!i}"; done
-```
-##### Manual addition of transcript_total
+##### Manual addition of transcript_total to calculate average
 ```
 cat 60_quant.sf | cut -f 1,5 | awk '{sum+=$2/total_transcripts} END{print "sum=",sum}'
 ```
-##### Print both columns while counting total of "NumReads"
 ```
-cat 60_quant.sf | cut -f 1,5 | awk '{sum+=$2/total_transcripts ; print $0} END{print "sum=",sum}'
+To print both columns in terminal, add: " ; print $0} " before END{print "sum="...'
 ```
 #### (2) Total Reads (in FASTQ file)
 ```
-zcat file.fastq.gz (see Analysis_2 folder) | paste - - - - | cut -f 1 | grep -c "@SRR"
+see Analysis_2 folder for .gz
+zcat *.fastq.gz | paste - - - - | cut -f 1 | grep -c "@SRR"
 ```
 #### (3) Mapping Rate Calculation
 Count total of "NumReads" and divide by total number of reads in original fastq file** (it's same for forward and reverse)
