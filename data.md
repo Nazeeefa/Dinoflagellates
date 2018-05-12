@@ -27,7 +27,10 @@ Key:
 
 ##### ** command: count total number of sequences
 ```
-zcat file.fastq.gz (see Analysis_2 folder) | paste - - - - | cut -f 1 | grep -c "@SRR"
+QUICK version: zgrep -c '@SRR' SHTV-5_3_2.fastq.gz
+```
+```
+zcat *.fastq.gz | paste - - - - | cut -f 1 | grep -c "@SRR"
 ```
 + 67 = [Click on 'All runs'](https://www.ncbi.nlm.nih.gov/sra/?term=SRR1294439)*
 + PSU = Practical Salinity Unit; 1 g salt per 1000 grams of water = 1 PSU [Source](https://podaac.jpl.nasa.gov/SeaSurfaceSalinity)
