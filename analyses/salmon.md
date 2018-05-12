@@ -66,6 +66,10 @@ cat 60_quant.sf | cut -f 1,5 | awk '{sum+=$2 ; print $0} END{print "sum=",sum}'
 ```
 #### (0) Average of "NumReads": Total of "NumReads" / Total of Transcripts
 ```
+cat 60_quant.sf | cut -f 1,5 | awk '{sum+=$2/total_transcripts} END{print "sum=",sum}'
+```
+##### Print both columns while counting total of "NumReads"
+```
 cat 60_quant.sf | cut -f 1,5 | awk '{sum+=$2/total_transcripts ; print $0} END{print "sum=",sum}'
 ```
 #### (2) Total Reads (in FASTQ file)
