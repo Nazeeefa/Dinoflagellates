@@ -68,6 +68,11 @@ cat 60_quant.sf | cut -f 1,5 | awk '{sum+=$2 ; print $0} END{print "sum=",sum}'
 ```
 transcript_total=$(cat 60_quant.sf | cut -f 1,5 | grep -c "CAMNT") | numreads_total=$(cat 60_quant.sf | cut -f 1,5 | awk '{sum+=$2} END{print "sum=",sum}') | echo $(( numreads_total / transcript_total ))
 ```
+```
+transcript_total=$(cat 60_quant.sf | cut -f 1,5 | grep -c "CAMNT") | numreads_total=$(cat 60_quant.sf | cut -f 1,5 | awk '{sum+=$2}') | for i in {transcript_total,numreads_total,average_reads}; do echo "$i = ${!i}"; done
+
+transcript_total=$(cat 60_quant.sf | cut -f 1,5 | grep -c "CAMNT") | numreads_total=$(cat 60_quant.sf | cut -f 1,5 | awk '{sum+=$2}') | avg=$(echo $(( $numreads_total / transcript_total ))) | for i in {transcript_total,numreads_total,avg}; do echo "$i = ${!i}"; done
+```
 ##### Manual addition of transcript_total
 ```
 cat 60_quant.sf | cut -f 1,5 | awk '{sum+=$2/total_transcripts} END{print "sum=",sum}'
