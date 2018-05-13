@@ -42,27 +42,27 @@ transcript abundance from RNA-seq reads
 ### RESULTS: Stats
 
 | Sample Number | Total of Transcripts |Average of "NumReads" | Total of "NumReads" (1) | Total Reads (2) | Mapping Rate % (3) 
-|--------       |   ----------------   | ----------            | ------------------------| -----------------| ----------  |
-| 59            |      81854           | 323.477 reads         |    26477867             |    27365859       |       |
-| 60            |       69908           | 208.736 reads        |      14592308            |  16785889        |   86.932    |
-| 61            |                       | reads                |                 |          |       |
-| 67            |                       | reads                |                 |          |       |
-| 68            |                       | reads                |                |          |       |
-| 69            |                        | reads                |                 |          |       |
-| 70            |                       | reads                |                 |          |       |
-| 71            |                       | reads                 |                 |          |       |
+|--------       |   ----------------   | ----------           | ------------------------| ---------------| ----------  |
+| SHTV-5_0 (59) |      81854           | 323.477              |    26477867             |    27365859    |   96.7551  |
+| SHTV-5_3 (60) |       69908          | 208.736              |      14592308           |  16785889       |   86.932    |
+| SHTV-5_30 (61)|       83907          |                      |      19843840           |   20841201       | 95.2145 |
+| SHHI-4_0 (67) |       76640          | reads                |      20838935           |  23109623        |   90.1743 |
+| SHHI-4_3 (68) |       77388          | reads                |      20483502           |   22831746       |   89.715   |
+| SHHI-4_30 (69)|        80845         | reads                |      21891329           |  24488163        |  89.3956     |
+| PAER-2_0 (70) |       64738          | reads                |      17843002           |  20622130        |   86.5236    |
+| PAER-2_3 (71) |       66306          | reads                |      18425504           |  21274591        |   86.608    |
 
 #### (0) Total of Transcripts
 ```
-cat 60_quant.sf | cut -f 1 | grep -c "CAMNT" 
+cat *_quant.sf | cut -f 1 | grep -c "CAMNT" 
 ```
 #### (1) Counting total of "NumReads"
 ```
-cat 60_quant.sf | cut -f 1,5 | awk '{sum+=$2} END{print "sum=",sum}'
+cat *_quant.sf | cut -f 1,5 | awk '{sum+=$2} END{print "sum=",sum}'
 ```
 ##### Print total of each of both columns
 ```
-transcript=$(cat 60_quant.sf | cut -f 1,5 | grep -c "CAMNT" ) | numreads=$(cat 60_quant.sf | cut -f 1,5 | awk '{numreads+=$2} END{print "numreads=", numreads}' ) | for i in {transcript,numreads}; do echo "$i = ${!i}"; done
+transcript=$(cat *_quant.sf | cut -f 1,5 | grep -c "CAMNT" ) | numreads=$(cat *_quant.sf | cut -f 1,5 | awk '{numreads+=$2} END{print "numreads=", numreads}' ) | for i in {transcript,numreads}; do echo "$i = ${!i}"; done
 ```
 #### (0) Average of "NumReads": Total of "NumReads" / Total of Transcripts...
 ```
@@ -70,7 +70,7 @@ echo $(( numreads / transcript))
 ```
 ##### Manual addition of transcript_total to calculate average
 ```
-cat 60_quant.sf | cut -f 1,5 | awk '{sum+=$2/total_transcripts} END{print "sum=",sum}'
+cat *_quant.sf | cut -f 1,5 | awk '{sum+=$2/total_transcripts} END{print "sum=",sum}'
 ```
 ```
 To print both columns in terminal, add: " ; print $0} " before END{print "sum="...'
