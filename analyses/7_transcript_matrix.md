@@ -3,7 +3,7 @@
 [Information](https://github.com/trinityrnaseq/KrumlovTrinityWorkshopJan2018/wiki#generate-a-transcript-counts-matrix-and-perform-cross-sample-normalization)
 
 ```
-/home/nazeefa/bin/trinityrnaseq-Trinity-v2.6.6/util/abundance_estimates_to_matrix.pl --est_method salmon --out_prefix Trinity name_sample_by_basedir /home/nazeefa/dinoflagellates/MMETSP03/Data/salmon/ --quant_files quant_files.list --gene_trans_map none
+/home/nazeefa/bin/trinityrnaseq-Trinity-v2.6.6/util/abundance_estimates_to_matrix.pl --est_method salmon --out_prefix Trinity --name_sample_by_basedir /home/nazeefa/dinoflagellates/MMETSP03/Data/salmon/ --quant_files quant_files.list --gene_trans_map none
 ```
 
 ### Error
