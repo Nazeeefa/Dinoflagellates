@@ -1,7 +1,5 @@
 ### 4. Trinity: RNA-Seq De novo Assembly Using Trinity
 
-Trinity is utilised to understand..............
-
 ```
 sudo perl /home/nazeefa/bin/trinityrnaseq-Trinity-v2.6.6/util/TrinityStats.pl MMETSP0360.nt.fa > trinity_60.fa
 ```
