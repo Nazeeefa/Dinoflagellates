@@ -1,4 +1,23 @@
+#### Multiple paired-end datasets Run (All against 59 as reference):
+```
+/home/nazeefa/bin/subread-1.6.2-source/bin/featureCounts -p -t exon -g ID -a /home/nazeefa/dinoflagellates/MMETSP03/Data/counts_matrix/MMETSP0359.nt.fa.transdecoder_dir/longest_orfs.gff3 -o MMETSP0359_counts.txt /home/nazeefa/dinoflagellates/MMETSP03/Data/assembly/59_bowtie_0/bowtie2_59.bam /home/nazeefa/dinoflagellates/MMETSP03/Data/assembly/59_bowtie_0/59_bowtie_samples/59_bowtie2_SHTV-5_3.bam /home/nazeefa/dinoflagellates/MMETSP03/Data/assembly/59_bowtie_0/59_bowtie_samples/59_bowtie2_SHTV-5_30.bam /home/nazeefa/dinoflagellates/MMETSP03/Data/assembly/59_bowtie_0/59_bowtie_samples/59_bowtie2_SHHI-4_0.bam /home/nazeefa/dinoflagellates/MMETSP03/Data/assembly/59_bowtie_0/59_bowtie_samples/59_bowtie2_SHHI-4_3.bam /home/nazeefa/dinoflagellates/MMETSP03/Data/assembly/59_bowtie_0/59_bowtie_samples/59_bowtie2_SHHI-4_30.bam /home/nazeefa/dinoflagellates/MMETSP03/Data/assembly/59_bowtie_0/59_bowtie_samples/59_bowtie2_PAER-2_0.bam /home/nazeefa/dinoflagellates/MMETSP03/Data/assembly/59_bowtie_0/59_bowtie_samples/59_bowtie2_PAER-2_3.bam
+```
 
+-p If specified, fragments (or templates) will be counted
+                      instead of reads. Only applicable for
+                      paired-end reads <br>
+-t Specify feature type in GTF annotation. 'exon' by 
+                      default. Features used for read counting will be 
+                      extracted from annotation using the provided value (which, in this case, is exon). <br>
+-g Specify attribute type in GTF annotation. 'gene_id' by 
+                      default. Meta-features used for read counting will be 
+                      extracted from annotation using the provided value (again, default 'gene_id' is used) <br>
+-a Name of an annotation file. GTF/GFF format by default. <br>
+-o Name of the output file including read counts. A separate
+                      file including summary statistics of counting results is
+                      also included in the output 
+                      
+                      
         ==========     _____ _    _ ____  _____  ______          _____  
         =====         / ____| |  | |  _ \|  __ \|  ____|   /\   |  __ \                                                                                                                                           
           =====      | (___ | |  | | |_) | |__) | |__     /  \  | |  | |                                                                                                                                          
