@@ -1,6 +1,6 @@
 ### TransDecoder
 
-#### Test: Sample 59
+#### In counts_matrix directory - Test: Sample 59
 ```
 /home/nazeefa/bin/TransDecoder-TransDecoder-v5.3.0/TransDecoder.LongOrfs -t /home/nazeefa/dinoflagellates/MMETSP03/Data/assembly/MMETSP0359.nt.fa
 ```
