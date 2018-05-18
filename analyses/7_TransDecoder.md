@@ -1,7 +1,3 @@
-http://bioinf.wehi.edu.au/featureCounts/
-
-https://www.biostars.org/p/96176/
-
 ### TransDecoder
 
 #### Test: Sample 59
@@ -25,7 +21,7 @@ https://www.biostars.org/p/96176/
 
 	Then, run TransDecoder.Predict for your final coding region predictions.
 
-#### Output:
+#### Output (gff3 to be used for featureCounts):
 
 ```
 /MMETSP0359.nt.fa.transdecoder_dir >> longest_orfs.gff3
