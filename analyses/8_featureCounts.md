@@ -14,14 +14,14 @@
 ```
 -p If specified, fragments (or templates) will be counted
                       instead of reads. Only applicable for
-                      paired-end reads
+                      paired-end reads <br>
 -t Specify feature type in GTF annotation. 'exon' by 
                       default. Features used for read counting will be 
-                      extracted from annotation using the provided value (which, in this case, is exon).
+                      extracted from annotation using the provided value (which, in this case, is exon). <br>
 -g Specify attribute type in GTF annotation. 'gene_id' by 
                       default. Meta-features used for read counting will be 
-                      extracted from annotation using the provided value (again, default 'gene_id' is used)
--a Name of an annotation file. GTF/GFF format by default.
+                      extracted from annotation using the provided value (again, default 'gene_id' is used) <br>
+-a Name of an annotation file. GTF/GFF format by default. <br>
 -o Name of the output file including read counts. A separate
                       file including summary statistics of counting results is
                       also included in the output 
