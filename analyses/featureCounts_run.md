@@ -166,3 +166,15 @@ The attributes included in your GTF annotation are 'ID=CAMNT_0050883471.p1.exon1
 || ry"                                                                        ||
 ||                                                                            ||
 \\===================== http://subread.sourceforge.net/ ======================//
+
+#### in txt.summary file:
+
+Unassigned_NoFeatures:
+1185147 Sample 61
+14268673        
+19791423        
+20491122        
+20090059        
+21414022        
+17498212        
+18048344
