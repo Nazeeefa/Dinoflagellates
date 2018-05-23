@@ -37,20 +37,3 @@
 | **SRR1294439 + PAER-2_0 (70)**                     |   **80.95%**           |   80.18%      |      
 | **SRR1294440 + PAER-2_3 (71)**                     |     80.31%         |   **80.95%**       | 
 
-
-#### RESULTS: For reads aligning back to corresponding assembly (contigs):
-
-The results indicate high quality (see **bold figures**) i.e. more than ~80% of the aligned reads/fragments are mapped as proper pairs back to the assembly itself ("yielding concordant alignments 1 or more times to the reconstructed transcriptome."). Overall, the besr reference to itself is SHTV-5_0 (sample MMETSP0359).
-
-#### RESULTS: For reads aligning back to reference assembly (contigs):
-
-The subsequent analyses involved using each sample (from all three strains) as references, and were performed against all including related samples (except itself i.e. corresponding assembly/contig since it has already been done).
-
-#### RESULTS: SHTV-5
-
-The results indicate decrease in quality as the strains differ. For SHTV-5 samples, more than ~75% of the aligned reads are mapped as proper pairs back to related samples - which could be expected due to same environment. On the other hand, 
-
-In terms of comparison between samples with salinity level of 0, more than 74% of aligned reads are mapped successfully. For samples with salinity level of 3, __________. For samples with salinity level of 30, ____________.
-
-##### Conclusion:
-In case of low quality, deeper sequencing and assembly of more reads would be expected for improvements.
