@@ -21,13 +21,15 @@ ln -s /home/nazeefa/dinoflagellates/MMETSP03/Data/fastq/SRR1296793_1.fastq.gz SH
 ln -s /home/nazeefa/dinoflagellates/MMETSP03/Data/fastq/SRR1296793_2.fastq.gz SHHI-4_0_2.fastq.gz
 ```
 #### 68 (3 PSU) ---
+```
 ln -s /home/nazeefa/dinoflagellates/MMETSP03/Data/fastq/SRR1296794_1.fastq.gz SHHI-4_3_1.fastq.gz
 ln -s /home/nazeefa/dinoflagellates/MMETSP03/Data/fastq/SRR1296794_2.fastq.gz SHHI-4_3_2.fastq.gz
-
+```
 #### 69 (30 PSU) ---
+```
 ln -s /home/nazeefa/dinoflagellates/MMETSP03/Data/fastq/SRR1296796_1.fastq.gz SHHI-4_30_1.fastq.gz
 ln -s /home/nazeefa/dinoflagellates/MMETSP03/Data/fastq/SRR1296796_2.fastq.gz SHHI-4_30_2.fastq.gz
-
+```
 #### 70 (0 PSU) -----
 ```
 ln -s /home/nazeefa/dinoflagellates/MMETSP03/Data/fastq/SRR1294439_1.fastq.gz PAER-2_0_1.fastq.gz
