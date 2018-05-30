@@ -27,8 +27,8 @@ cat file.nt.fa | grep -v ">" | wc -l
 less  MMETSP0359.nt.fa | grep ">" $1
 ```
 
-| Sample Number | Number of Sequences (in assembly/contig) | Trinity |
-|--------    | ---- | -------------|
+| Sample Number | Number of Sequences (in assembly/contig) |
+|--------    | ---- |
 | 59 |  81854 	 | Y | 
 | 60 |  69908 	 | Y | 
 | 61 |  83907 	 |  |
