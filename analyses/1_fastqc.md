@@ -22,3 +22,7 @@ The quality of data is evaluated using FASTQC.
 | Forwards |
 | Reverse	  |
 
+#### Count total number of sequences
+```
+echo $(zcat filename.fastq.gz | wc -l) / 4 | bc
+```
