@@ -1,5 +1,5 @@
 
-The repository is a part of a study that aims to understand the effects of salinity in Dinoflagellates' species at expression level. The project is being carried out at [Rengefors lab](https://rengeforslab.org/).
+The repository is a part of a study that aims to understand the effects of salinity in Dinoflagellates' species at expression level. The project was carried out at [Rengefors lab](https://rengeforslab.org/).
 
 ### Files:
 
